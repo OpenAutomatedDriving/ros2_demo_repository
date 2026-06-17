@@ -8,6 +8,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(diagnostic_updater REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(perception_msgs REQUIRED)
+find_package(perception_msgs_utils REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(openads_demo_module_interfaces REQUIRED)
@@ -27,6 +29,8 @@ target_link_libraries(${TARGET_NAME} PUBLIC
   rclcpp::rclcpp
   ${diagnostic_updater_TARGETS}
   ${geometry_msgs_TARGETS}
+  ${perception_msgs_TARGETS}
+  ${perception_msgs_utils_TARGETS}
   ${rclcpp_action_TARGETS}
   ${openads_demo_module_interfaces_TARGETS}
   ${std_srvs_TARGETS}
