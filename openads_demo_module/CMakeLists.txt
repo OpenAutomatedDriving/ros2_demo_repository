@@ -7,7 +7,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(diagnostic_updater REQUIRED)
-find_package(geometry_msgs REQUIRED)
 find_package(perception_msgs REQUIRED)
 find_package(perception_msgs_utils REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -28,7 +27,6 @@ target_compile_features(${TARGET_NAME} PUBLIC c_std_99 cxx_std_17)
 target_link_libraries(${TARGET_NAME} PUBLIC
   rclcpp::rclcpp
   ${diagnostic_updater_TARGETS}
-  ${geometry_msgs_TARGETS}
   ${perception_msgs_TARGETS}
   ${perception_msgs_utils_TARGETS}
   ${rclcpp_action_TARGETS}
