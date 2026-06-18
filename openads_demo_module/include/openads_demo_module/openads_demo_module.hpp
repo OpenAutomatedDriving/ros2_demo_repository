@@ -169,7 +169,6 @@ class OpenadsDemoModule : public rclcpp::Node {
                  const std::string& msg,
                  const std::map<std::string, std::string>& key_value_pairs = {});
 
- private:
   /**
    * @brief Auto-reconfigurable parameters for dynamic reconfiguration
    */
@@ -220,8 +219,8 @@ class OpenadsDemoModule : public rclcpp::Node {
    */
   struct DiagnosticStatus {
     unsigned char status = diagnostic_msgs::msg::DiagnosticStatus::STALE;
-    std::string message = "";
-    std::map<std::string, std::string> key_value_pairs = {};
+    std::string message;
+    std::map<std::string, std::string> key_value_pairs;
   } health_;
 
   /**
