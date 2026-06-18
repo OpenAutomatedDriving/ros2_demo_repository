@@ -7,5 +7,5 @@ var searchData=
   ['setup_4',['setup',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ac9f4c90d94a3bbe9578d2226486a315e',1,'openads_demo_module::OpenadsDemoModule']]],
   ['start_5',['🚀 Quick Start',['../index.html#autotoc_md1',1,'']]],
   ['status_6',['status',['../structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c',1,'openads_demo_module::OpenadsDemoModule::DiagnosticStatus']]],
-  ['subscriber_5f_7',['subscriber_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ac1bb22f1479f56878cd9cb160df65f35',1,'openads_demo_module::OpenadsDemoModule']]]
+  ['subscriber_5f_7',['subscriber_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a0114c1991bf14e7b591e7f1ca6f11e55',1,'openads_demo_module::OpenadsDemoModule']]]
 ];

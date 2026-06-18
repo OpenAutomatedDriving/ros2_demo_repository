@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">openads_demo_module<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">openads_demo_module<span id="projectnumber">&#160;v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -152,18 +152,18 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Exit status code. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00324">324</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  324</span>                                 {</div>
-<div class="line"><span class="lineno">  325</span>  rclcpp::init(argc, argv);</div>
-<div class="line"><span class="lineno">  326</span>  <span class="keyword">auto</span> node = std::make_shared&lt;openads_demo_module::OpenadsDemoModule&gt;();</div>
-<div class="line"><span class="lineno">  327</span>  rclcpp::executors::SingleThreadedExecutor executor;</div>
-<div class="line"><span class="lineno">  328</span>  RCLCPP_INFO(node-&gt;get_logger(), <span class="stringliteral">&quot;Spinning node &#39;%s&#39; with %s&quot;</span>, node-&gt;get_fully_qualified_name(), <span class="stringliteral">&quot;SingleThreadedExecutor&quot;</span>);</div>
-<div class="line"><span class="lineno">  329</span>  executor.add_node(node);</div>
-<div class="line"><span class="lineno">  330</span>  executor.spin();</div>
-<div class="line"><span class="lineno">  331</span>  rclcpp::shutdown();</div>
-<div class="line"><span class="lineno">  332</span> </div>
-<div class="line"><span class="lineno">  333</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  334</span>}</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00327">327</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  327</span>                                 {</div>
+<div class="line"><span class="lineno">  328</span>  rclcpp::init(argc, argv);</div>
+<div class="line"><span class="lineno">  329</span>  <span class="keyword">auto</span> node = std::make_shared&lt;openads_demo_module::OpenadsDemoModule&gt;();</div>
+<div class="line"><span class="lineno">  330</span>  rclcpp::executors::SingleThreadedExecutor executor;</div>
+<div class="line"><span class="lineno">  331</span>  RCLCPP_INFO(node-&gt;get_logger(), <span class="stringliteral">&quot;Spinning node &#39;%s&#39; with %s&quot;</span>, node-&gt;get_fully_qualified_name(), <span class="stringliteral">&quot;SingleThreadedExecutor&quot;</span>);</div>
+<div class="line"><span class="lineno">  332</span>  executor.add_node(node);</div>
+<div class="line"><span class="lineno">  333</span>  executor.spin();</div>
+<div class="line"><span class="lineno">  334</span>  rclcpp::shutdown();</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  337</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

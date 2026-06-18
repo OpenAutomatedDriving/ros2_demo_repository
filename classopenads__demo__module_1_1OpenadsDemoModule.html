@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">openads_demo_module<span id="projectnumber">&#160;v0.3.0</span>
+   <div id="projectname">openads_demo_module<span id="projectnumber">&#160;v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -142,9 +142,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac9f4c90d94a3bbe9578d2226486a315e" id="r_ac9f4c90d94a3bbe9578d2226486a315e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f4c90d94a3bbe9578d2226486a315e">setup</a> ()</td></tr>
 <tr class="memdesc:ac9f4c90d94a3bbe9578d2226486a315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up subscribers, publishers, etc. to configure the node.  <br /></td></tr>
 <tr class="separator:ac9f4c90d94a3bbe9578d2226486a315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b19f928541256f32e26a66fc7410cc4" id="r_a5b19f928541256f32e26a66fc7410cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b19f928541256f32e26a66fc7410cc4">topicCallback</a> (const geometry_msgs::msg::PointStamped::ConstSharedPtr &amp;msg)</td></tr>
-<tr class="memdesc:a5b19f928541256f32e26a66fc7410cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes messages received by a subscriber.  <br /></td></tr>
-<tr class="separator:a5b19f928541256f32e26a66fc7410cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa582e304b5fe0535525f88c0e2d93527" id="r_aa582e304b5fe0535525f88c0e2d93527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa582e304b5fe0535525f88c0e2d93527">topicCallback</a> (const perception_msgs::msg::EgoData::ConstSharedPtr &amp;msg)</td></tr>
+<tr class="memdesc:aa582e304b5fe0535525f88c0e2d93527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes messages received by a subscriber.  <br /></td></tr>
+<tr class="separator:aa582e304b5fe0535525f88c0e2d93527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aaa82f6120f871b31f07cebf59b9352" id="r_a5aaa82f6120f871b31f07cebf59b9352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aaa82f6120f871b31f07cebf59b9352">serviceCallback</a> (const std::shared_ptr&lt; std_srvs::srv::SetBool::Request &gt; request, std::shared_ptr&lt; std_srvs::srv::SetBool::Response &gt; response)</td></tr>
 <tr class="memdesc:a5aaa82f6120f871b31f07cebf59b9352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes service requests.  <br /></td></tr>
 <tr class="separator:a5aaa82f6120f871b31f07cebf59b9352"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,12 +178,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a3cd356c22b232ecdc91d3ad77fe0b05f" id="r_a3cd356c22b232ecdc91d3ad77fe0b05f"><td class="memItemLeft" align="right" valign="top">OnSetParametersCallbackHandle::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cd356c22b232ecdc91d3ad77fe0b05f">parameters_callback_</a></td></tr>
 <tr class="memdesc:a3cd356c22b232ecdc91d3ad77fe0b05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback handle for dynamic parameter reconfiguration.  <br /></td></tr>
 <tr class="separator:a3cd356c22b232ecdc91d3ad77fe0b05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1bb22f1479f56878cd9cb160df65f35" id="r_ac1bb22f1479f56878cd9cb160df65f35"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; geometry_msgs::msg::PointStamped &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1bb22f1479f56878cd9cb160df65f35">subscriber_</a></td></tr>
-<tr class="memdesc:ac1bb22f1479f56878cd9cb160df65f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscriber.  <br /></td></tr>
-<tr class="separator:ac1bb22f1479f56878cd9cb160df65f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2a6774549f9f1ac22bdf4f2725bcae" id="r_a9e2a6774549f9f1ac22bdf4f2725bcae"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; geometry_msgs::msg::PointStamped &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e2a6774549f9f1ac22bdf4f2725bcae">publisher_</a></td></tr>
-<tr class="memdesc:a9e2a6774549f9f1ac22bdf4f2725bcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publisher.  <br /></td></tr>
-<tr class="separator:a9e2a6774549f9f1ac22bdf4f2725bcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0114c1991bf14e7b591e7f1ca6f11e55" id="r_a0114c1991bf14e7b591e7f1ca6f11e55"><td class="memItemLeft" align="right" valign="top">rclcpp::Subscription&lt; perception_msgs::msg::EgoData &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0114c1991bf14e7b591e7f1ca6f11e55">subscriber_</a></td></tr>
+<tr class="memdesc:a0114c1991bf14e7b591e7f1ca6f11e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscriber.  <br /></td></tr>
+<tr class="separator:a0114c1991bf14e7b591e7f1ca6f11e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf0c5d9a6fda9996687caf74bc574cb" id="r_aaaf0c5d9a6fda9996687caf74bc574cb"><td class="memItemLeft" align="right" valign="top">rclcpp::Publisher&lt; perception_msgs::msg::EgoData &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf0c5d9a6fda9996687caf74bc574cb">publisher_</a></td></tr>
+<tr class="memdesc:aaaf0c5d9a6fda9996687caf74bc574cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publisher.  <br /></td></tr>
+<tr class="separator:aaaf0c5d9a6fda9996687caf74bc574cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f9fc12beeb6b04376efa78f9a1c920" id="r_ae2f9fc12beeb6b04376efa78f9a1c920"><td class="memItemLeft" align="right" valign="top">rclcpp::Service&lt; std_srvs::srv::SetBool &gt;::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f9fc12beeb6b04376efa78f9a1c920">service_server_</a></td></tr>
 <tr class="memdesc:ae2f9fc12beeb6b04376efa78f9a1c920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service server.  <br /></td></tr>
 <tr class="separator:ae2f9fc12beeb6b04376efa78f9a1c920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,9 +207,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:adfb14cebec1f7e19edb0c4027f81bf91" id="r_adfb14cebec1f7e19edb0c4027f81bf91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html">TopicDiagnosticConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfb14cebec1f7e19edb0c4027f81bf91">topic_diagnostic_config_</a></td></tr>
 <tr class="memdesc:adfb14cebec1f7e19edb0c4027f81bf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for auto-diagnosed topic subscription.  <br /></td></tr>
 <tr class="separator:adfb14cebec1f7e19edb0c4027f81bf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335cfa4053951faac646aed3422c8f7f" id="r_a335cfa4053951faac646aed3422c8f7f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; diagnostic_updater::DiagnosedPublisher&lt; geometry_msgs::msg::PointStamped &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a335cfa4053951faac646aed3422c8f7f">diagnosed_publisher_</a></td></tr>
-<tr class="memdesc:a335cfa4053951faac646aed3422c8f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnosed publisher.  <br /></td></tr>
-<tr class="separator:a335cfa4053951faac646aed3422c8f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841fdc2ddf54aa3184fb075a30aceafd" id="r_a841fdc2ddf54aa3184fb075a30aceafd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; diagnostic_updater::DiagnosedPublisher&lt; perception_msgs::msg::EgoData &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841fdc2ddf54aa3184fb075a30aceafd">diagnosed_publisher_</a></td></tr>
+<tr class="memdesc:a841fdc2ddf54aa3184fb075a30aceafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnosed publisher.  <br /></td></tr>
+<tr class="separator:a841fdc2ddf54aa3184fb075a30aceafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f4cd4bc2da79385c8810b54c3640dd" id="r_a68f4cd4bc2da79385c8810b54c3640dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html">TopicDiagnosticConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a></td></tr>
 <tr class="memdesc:a68f4cd4bc2da79385c8810b54c3640dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for auto-diagnosed publisher.  <br /></td></tr>
 <tr class="separator:a68f4cd4bc2da79385c8810b54c3640dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +217,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classopenads__demo__module_1_1OpenadsDemoModule.html" title="OpenadsDemoModule class.">OpenadsDemoModule</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00056">56</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00057">57</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a199f45fb2799640c55e15292d84d4aca" name="a199f45fb2799640c55e15292d84d4aca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a199f45fb2799640c55e15292d84d4aca">&#9670;&#160;</a></span>OpenadsDemoModule()</h2>
@@ -261,15 +261,15 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   33</span>                                <span class="stringliteral">&quot;Maximum acceptable timestamp delta for outgoing messages&quot;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   34</span>  this-&gt;<a class="code hl_function" href="#ac9f4c90d94a3bbe9578d2226486a315e">setup</a>();</div>
 <div class="line"><span class="lineno">   35</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a68f4cd4bc2da79385c8810b54c3640dd"><div class="ttname"><a href="#a68f4cd4bc2da79385c8810b54c3640dd">openads_demo_module::OpenadsDemoModule::diagnosed_publisher_config_</a></div><div class="ttdeci">TopicDiagnosticConfig diagnosed_publisher_config_</div><div class="ttdoc">Configuration for auto-diagnosed publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00244">openads_demo_module.hpp:244</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a68f4cd4bc2da79385c8810b54c3640dd"><div class="ttname"><a href="#a68f4cd4bc2da79385c8810b54c3640dd">openads_demo_module::OpenadsDemoModule::diagnosed_publisher_config_</a></div><div class="ttdeci">TopicDiagnosticConfig diagnosed_publisher_config_</div><div class="ttdoc">Configuration for auto-diagnosed publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00245">openads_demo_module.hpp:245</a></div></div>
 <div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ac9f4c90d94a3bbe9578d2226486a315e"><div class="ttname"><a href="#ac9f4c90d94a3bbe9578d2226486a315e">openads_demo_module::OpenadsDemoModule::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Sets up subscribers, publishers, etc. to configure the node.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00128">openads_demo_module.cpp:128</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_adfb14cebec1f7e19edb0c4027f81bf91"><div class="ttname"><a href="#adfb14cebec1f7e19edb0c4027f81bf91">openads_demo_module::OpenadsDemoModule::topic_diagnostic_config_</a></div><div class="ttdeci">TopicDiagnosticConfig topic_diagnostic_config_</div><div class="ttdoc">Configuration for auto-diagnosed topic subscription.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00234">openads_demo_module.hpp:234</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ae7412d39d5268d7d5707a937f022b846"><div class="ttname"><a href="#ae7412d39d5268d7d5707a937f022b846">openads_demo_module::OpenadsDemoModule::param_</a></div><div class="ttdeci">double param_</div><div class="ttdoc">Dummy parameter (parameter)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00210">openads_demo_module.hpp:210</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_adfb14cebec1f7e19edb0c4027f81bf91"><div class="ttname"><a href="#adfb14cebec1f7e19edb0c4027f81bf91">openads_demo_module::OpenadsDemoModule::topic_diagnostic_config_</a></div><div class="ttdeci">TopicDiagnosticConfig topic_diagnostic_config_</div><div class="ttdoc">Configuration for auto-diagnosed topic subscription.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00235">openads_demo_module.hpp:235</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ae7412d39d5268d7d5707a937f022b846"><div class="ttname"><a href="#ae7412d39d5268d7d5707a937f022b846">openads_demo_module::OpenadsDemoModule::param_</a></div><div class="ttdeci">double param_</div><div class="ttdoc">Dummy parameter (parameter)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00211">openads_demo_module.hpp:211</a></div></div>
 <div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_aeb9a0621cf72acc77efdfa74e4034418"><div class="ttname"><a href="#aeb9a0621cf72acc77efdfa74e4034418">openads_demo_module::OpenadsDemoModule::declareAndLoadParameter</a></div><div class="ttdeci">void declareAndLoadParameter(const std::string &amp;name, T &amp;param, const std::string &amp;description, const bool add_to_auto_reconfigurable_params=true, const bool is_required=false, const bool read_only=false, const std::optional&lt; double &gt; &amp;from_value=std::nullopt, const std::optional&lt; double &gt; &amp;to_value=std::nullopt, const std::optional&lt; double &gt; &amp;step_value=std::nullopt, const std::string &amp;additional_constraints=&quot;&quot;)</div><div class="ttdoc">Declares and loads a ROS parameter.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00038">openads_demo_module.cpp:38</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a28f2ed9699e13a1f372b4e0dbd88a759"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a28f2ed9699e13a1f372b4e0dbd88a759">openads_demo_module::TopicDiagnosticConfig::min_acceptable_timestamp_delta</a></div><div class="ttdeci">double min_acceptable_timestamp_delta</div><div class="ttdoc">Minimum acceptable difference between message timestamp and receipt time (in seconds)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00045">openads_demo_module.hpp:45</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a2bd32f97b918d076808715c4df796501"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a2bd32f97b918d076808715c4df796501">openads_demo_module::TopicDiagnosticConfig::max_acceptable_timestamp_delta</a></div><div class="ttdeci">double max_acceptable_timestamp_delta</div><div class="ttdoc">Maximum acceptable difference between message timestamp and receipt time (in seconds)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00050">openads_demo_module.hpp:50</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a5a923558ded476ae9f09f7cafc70bf73"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a5a923558ded476ae9f09f7cafc70bf73">openads_demo_module::TopicDiagnosticConfig::min_frequency</a></div><div class="ttdeci">double min_frequency</div><div class="ttdoc">Minimum acceptable frequency.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00035">openads_demo_module.hpp:35</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_ace51f792969e6a697c4deea8d7b67d69"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#ace51f792969e6a697c4deea8d7b67d69">openads_demo_module::TopicDiagnosticConfig::max_frequency</a></div><div class="ttdeci">double max_frequency</div><div class="ttdoc">Maximum acceptable frequency.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00040">openads_demo_module.hpp:40</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a28f2ed9699e13a1f372b4e0dbd88a759"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a28f2ed9699e13a1f372b4e0dbd88a759">openads_demo_module::TopicDiagnosticConfig::min_acceptable_timestamp_delta</a></div><div class="ttdeci">double min_acceptable_timestamp_delta</div><div class="ttdoc">Minimum acceptable difference between message timestamp and receipt time (in seconds)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00046">openads_demo_module.hpp:46</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a2bd32f97b918d076808715c4df796501"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a2bd32f97b918d076808715c4df796501">openads_demo_module::TopicDiagnosticConfig::max_acceptable_timestamp_delta</a></div><div class="ttdeci">double max_acceptable_timestamp_delta</div><div class="ttdoc">Maximum acceptable difference between message timestamp and receipt time (in seconds)</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00051">openads_demo_module.hpp:51</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_a5a923558ded476ae9f09f7cafc70bf73"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a5a923558ded476ae9f09f7cafc70bf73">openads_demo_module::TopicDiagnosticConfig::min_frequency</a></div><div class="ttdeci">double min_frequency</div><div class="ttdoc">Minimum acceptable frequency.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00036">openads_demo_module.hpp:36</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1TopicDiagnosticConfig_html_ace51f792969e6a697c4deea8d7b67d69"><div class="ttname"><a href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#ace51f792969e6a697c4deea8d7b67d69">openads_demo_module::TopicDiagnosticConfig::max_frequency</a></div><div class="ttdeci">double max_frequency</div><div class="ttdoc">Maximum acceptable frequency.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00041">openads_demo_module.hpp:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -305,51 +305,51 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00226">226</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  227</span>                                                                                                                   {</div>
-<div class="line"><span class="lineno">  228</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Executing action goal&quot;</span>);</div>
-<div class="line"><span class="lineno">  229</span> </div>
-<div class="line"><span class="lineno">  230</span>  <span class="comment">// define a sleeping rate between computing individual Fibonacci numbers</span></div>
-<div class="line"><span class="lineno">  231</span>  rclcpp::Rate loop_rate(1);</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00229">229</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  230</span>                                                                                                                   {</div>
+<div class="line"><span class="lineno">  231</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Executing action goal&quot;</span>);</div>
 <div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>  <span class="comment">// create handy accessors for the action goal, feedback, and result</span></div>
-<div class="line"><span class="lineno">  234</span>  <span class="keyword">const</span> <span class="keyword">auto</span> goal = goal_handle-&gt;get_goal();</div>
-<div class="line"><span class="lineno">  235</span>  <span class="keyword">auto</span> feedback = std::make_shared&lt;openads_demo_module_interfaces::action::Fibonacci::Feedback&gt;();</div>
-<div class="line"><span class="lineno">  236</span>  <span class="keyword">auto</span> result = std::make_shared&lt;openads_demo_module_interfaces::action::Fibonacci::Result&gt;();</div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>  <span class="comment">// initialize the Fibonacci sequence</span></div>
-<div class="line"><span class="lineno">  239</span>  <span class="keyword">auto</span>&amp; partial_sequence = feedback-&gt;partial_sequence;</div>
-<div class="line"><span class="lineno">  240</span>  partial_sequence.push_back(0);</div>
-<div class="line"><span class="lineno">  241</span>  partial_sequence.push_back(1);</div>
-<div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>  <span class="comment">// compute the Fibonacci sequence up to the requested order n</span></div>
-<div class="line"><span class="lineno">  244</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; goal-&gt;order &amp;&amp; rclcpp::ok(); ++i) {</div>
-<div class="line"><span class="lineno">  245</span>    <span class="comment">// cancel, if requested</span></div>
-<div class="line"><span class="lineno">  246</span>    <span class="keywordflow">if</span> (goal_handle-&gt;is_canceling()) {</div>
-<div class="line"><span class="lineno">  247</span>      result-&gt;sequence = feedback-&gt;partial_sequence;</div>
-<div class="line"><span class="lineno">  248</span>      goal_handle-&gt;canceled(result);</div>
-<div class="line"><span class="lineno">  249</span>      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Action goal canceled&quot;</span>);</div>
-<div class="line"><span class="lineno">  250</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  251</span>    }</div>
-<div class="line"><span class="lineno">  252</span> </div>
-<div class="line"><span class="lineno">  253</span>    <span class="comment">// compute the next Fibonacci number</span></div>
-<div class="line"><span class="lineno">  254</span>    partial_sequence.push_back(partial_sequence[i] + partial_sequence[i - 1]);</div>
+<div class="line"><span class="lineno">  233</span>  <span class="comment">// define a sleeping rate between computing individual Fibonacci numbers</span></div>
+<div class="line"><span class="lineno">  234</span>  rclcpp::Rate loop_rate(1);</div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span>  <span class="comment">// create handy accessors for the action goal, feedback, and result</span></div>
+<div class="line"><span class="lineno">  237</span>  <span class="keyword">const</span> <span class="keyword">auto</span> goal = goal_handle-&gt;get_goal();</div>
+<div class="line"><span class="lineno">  238</span>  <span class="keyword">auto</span> feedback = std::make_shared&lt;openads_demo_module_interfaces::action::Fibonacci::Feedback&gt;();</div>
+<div class="line"><span class="lineno">  239</span>  <span class="keyword">auto</span> result = std::make_shared&lt;openads_demo_module_interfaces::action::Fibonacci::Result&gt;();</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>  <span class="comment">// initialize the Fibonacci sequence</span></div>
+<div class="line"><span class="lineno">  242</span>  <span class="keyword">auto</span>&amp; partial_sequence = feedback-&gt;partial_sequence;</div>
+<div class="line"><span class="lineno">  243</span>  partial_sequence.push_back(0);</div>
+<div class="line"><span class="lineno">  244</span>  partial_sequence.push_back(1);</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>  <span class="comment">// compute the Fibonacci sequence up to the requested order n</span></div>
+<div class="line"><span class="lineno">  247</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; goal-&gt;order &amp;&amp; rclcpp::ok(); ++i) {</div>
+<div class="line"><span class="lineno">  248</span>    <span class="comment">// cancel, if requested</span></div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">if</span> (goal_handle-&gt;is_canceling()) {</div>
+<div class="line"><span class="lineno">  250</span>      result-&gt;sequence = feedback-&gt;partial_sequence;</div>
+<div class="line"><span class="lineno">  251</span>      goal_handle-&gt;canceled(result);</div>
+<div class="line"><span class="lineno">  252</span>      RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Action goal canceled&quot;</span>);</div>
+<div class="line"><span class="lineno">  253</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  254</span>    }</div>
 <div class="line"><span class="lineno">  255</span> </div>
-<div class="line"><span class="lineno">  256</span>    <span class="comment">// publish the current sequence as action feedback</span></div>
-<div class="line"><span class="lineno">  257</span>    goal_handle-&gt;publish_feedback(feedback);</div>
-<div class="line"><span class="lineno">  258</span>    RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Publishing action feedback&quot;</span>);</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>    <span class="comment">// sleep before computing the next Fibonacci number</span></div>
-<div class="line"><span class="lineno">  261</span>    loop_rate.sleep();</div>
-<div class="line"><span class="lineno">  262</span>  }</div>
-<div class="line"><span class="lineno">  263</span> </div>
-<div class="line"><span class="lineno">  264</span>  <span class="comment">// finish by publishing the action result</span></div>
-<div class="line"><span class="lineno">  265</span>  <span class="keywordflow">if</span> (rclcpp::ok()) {</div>
-<div class="line"><span class="lineno">  266</span>    result-&gt;sequence = partial_sequence;</div>
-<div class="line"><span class="lineno">  267</span>    goal_handle-&gt;succeed(result);</div>
-<div class="line"><span class="lineno">  268</span>    RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Goal succeeded&quot;</span>);</div>
-<div class="line"><span class="lineno">  269</span>  }</div>
-<div class="line"><span class="lineno">  270</span>}</div>
+<div class="line"><span class="lineno">  256</span>    <span class="comment">// compute the next Fibonacci number</span></div>
+<div class="line"><span class="lineno">  257</span>    partial_sequence.push_back(partial_sequence[i] + partial_sequence[i - 1]);</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>    <span class="comment">// publish the current sequence as action feedback</span></div>
+<div class="line"><span class="lineno">  260</span>    goal_handle-&gt;publish_feedback(feedback);</div>
+<div class="line"><span class="lineno">  261</span>    RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Publishing action feedback&quot;</span>);</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>    <span class="comment">// sleep before computing the next Fibonacci number</span></div>
+<div class="line"><span class="lineno">  264</span>    loop_rate.sleep();</div>
+<div class="line"><span class="lineno">  265</span>  }</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>  <span class="comment">// finish by publishing the action result</span></div>
+<div class="line"><span class="lineno">  268</span>  <span class="keywordflow">if</span> (rclcpp::ok()) {</div>
+<div class="line"><span class="lineno">  269</span>    result-&gt;sequence = partial_sequence;</div>
+<div class="line"><span class="lineno">  270</span>    goal_handle-&gt;succeed(result);</div>
+<div class="line"><span class="lineno">  271</span>    RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Goal succeeded&quot;</span>);</div>
+<div class="line"><span class="lineno">  272</span>  }</div>
+<div class="line"><span class="lineno">  273</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -384,12 +384,12 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00220">220</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  221</span>                                                                                                                   {</div>
-<div class="line"><span class="lineno">  222</span>  <span class="comment">// execute action in a separate thread to avoid blocking</span></div>
-<div class="line"><span class="lineno">  223</span>  std::thread{std::bind(&amp;<a class="code hl_function" href="#acbda5cf4d7ddd3195c0c4c5814b9c296">OpenadsDemoModule::actionExecute</a>, <span class="keyword">this</span>, std::placeholders::_1), goal_handle}.detach();</div>
-<div class="line"><span class="lineno">  224</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_acbda5cf4d7ddd3195c0c4c5814b9c296"><div class="ttname"><a href="#acbda5cf4d7ddd3195c0c4c5814b9c296">openads_demo_module::OpenadsDemoModule::actionExecute</a></div><div class="ttdeci">void actionExecute(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Executes an action.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00226">openads_demo_module.cpp:226</a></div></div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00223">223</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  224</span>                                                                                                                   {</div>
+<div class="line"><span class="lineno">  225</span>  <span class="comment">// execute action in a separate thread to avoid blocking</span></div>
+<div class="line"><span class="lineno">  226</span>  std::thread{std::bind(&amp;<a class="code hl_function" href="#acbda5cf4d7ddd3195c0c4c5814b9c296">OpenadsDemoModule::actionExecute</a>, <span class="keyword">this</span>, std::placeholders::_1), goal_handle}.detach();</div>
+<div class="line"><span class="lineno">  227</span>}</div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_acbda5cf4d7ddd3195c0c4c5814b9c296"><div class="ttname"><a href="#acbda5cf4d7ddd3195c0c4c5814b9c296">openads_demo_module::OpenadsDemoModule::actionExecute</a></div><div class="ttdeci">void actionExecute(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Executes an action.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00229">openads_demo_module.cpp:229</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,14 +425,14 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>cancel response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00211">211</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  212</span>                                                                                                                   {</div>
-<div class="line"><span class="lineno">  213</span>  (void)goal_handle;</div>
-<div class="line"><span class="lineno">  214</span> </div>
-<div class="line"><span class="lineno">  215</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received request to cancel action goal&quot;</span>);</div>
-<div class="line"><span class="lineno">  216</span> </div>
-<div class="line"><span class="lineno">  217</span>  <span class="keywordflow">return</span> rclcpp_action::CancelResponse::ACCEPT;</div>
-<div class="line"><span class="lineno">  218</span>}</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00214">214</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  215</span>                                                                                                                   {</div>
+<div class="line"><span class="lineno">  216</span>  (void)goal_handle;</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received request to cancel action goal&quot;</span>);</div>
+<div class="line"><span class="lineno">  219</span> </div>
+<div class="line"><span class="lineno">  220</span>  <span class="keywordflow">return</span> rclcpp_action::CancelResponse::ACCEPT;</div>
+<div class="line"><span class="lineno">  221</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,15 +473,15 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>goal response </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00201">201</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  202</span>                                                                                                             {</div>
-<div class="line"><span class="lineno">  203</span>  (void)uuid;</div>
-<div class="line"><span class="lineno">  204</span>  (void)goal;</div>
-<div class="line"><span class="lineno">  205</span> </div>
-<div class="line"><span class="lineno">  206</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received action goal request&quot;</span>);</div>
-<div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>  <span class="keywordflow">return</span> rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;</div>
-<div class="line"><span class="lineno">  209</span>}</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00204">204</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  205</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">  206</span>  (void)uuid;</div>
+<div class="line"><span class="lineno">  207</span>  (void)goal;</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received action goal request&quot;</span>);</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>  <span class="keywordflow">return</span> rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;</div>
+<div class="line"><span class="lineno">  212</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -634,8 +634,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  106</span>    <a class="code hl_variable" href="#ace41587477bd8a99946051a5a8705ef9">auto_reconfigurable_params_</a>.push_back(std::make_tuple(name, setter));</div>
 <div class="line"><span class="lineno">  107</span>  }</div>
 <div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ace41587477bd8a99946051a5a8705ef9"><div class="ttname"><a href="#ace41587477bd8a99946051a5a8705ef9">openads_demo_module::OpenadsDemoModule::auto_reconfigurable_params_</a></div><div class="ttdeci">std::vector&lt; std::tuple&lt; std::string, std::function&lt; void(const rclcpp::Parameter &amp;)&gt; &gt; &gt; auto_reconfigurable_params_</div><div class="ttdoc">Auto-reconfigurable parameters for dynamic reconfiguration.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00175">openads_demo_module.hpp:175</a></div></div>
-<div class="ttc" id="anamespaceopenads__demo__module_html_aa945efc99ec50695f87ed6f68869b1ba"><div class="ttname"><a href="namespaceopenads__demo__module.html#aa945efc99ec50695f87ed6f68869b1ba">openads_demo_module::is_vector_v</a></div><div class="ttdeci">constexpr bool is_vector_v</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00026">openads_demo_module.hpp:26</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ace41587477bd8a99946051a5a8705ef9"><div class="ttname"><a href="#ace41587477bd8a99946051a5a8705ef9">openads_demo_module::OpenadsDemoModule::auto_reconfigurable_params_</a></div><div class="ttdeci">std::vector&lt; std::tuple&lt; std::string, std::function&lt; void(const rclcpp::Parameter &amp;)&gt; &gt; &gt; auto_reconfigurable_params_</div><div class="ttdoc">Auto-reconfigurable parameters for dynamic reconfiguration.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00176">openads_demo_module.hpp:176</a></div></div>
+<div class="ttc" id="anamespaceopenads__demo__module_html_aa945efc99ec50695f87ed6f68869b1ba"><div class="ttname"><a href="namespaceopenads__demo__module.html#aa945efc99ec50695f87ed6f68869b1ba">openads_demo_module::is_vector_v</a></div><div class="ttdeci">constexpr bool is_vector_v</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00027">openads_demo_module.hpp:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -664,17 +664,17 @@ template&lt;typename T &gt; </div>
 
 <p>Function called by diagnostic updater to populate diagnostics status. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00296">296</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  296</span>                                                                              {</div>
-<div class="line"><span class="lineno">  297</span>  stat.summary(<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a>, <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">message</a>);</div>
-<div class="line"><span class="lineno">  298</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value] : <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">key_value_pairs</a>) {</div>
-<div class="line"><span class="lineno">  299</span>    stat.add(key, value);</div>
-<div class="line"><span class="lineno">  300</span>  }</div>
-<div class="line"><span class="lineno">  301</span>}</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00299">299</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  299</span>                                                                              {</div>
+<div class="line"><span class="lineno">  300</span>  stat.summary(<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a>, <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">message</a>);</div>
+<div class="line"><span class="lineno">  301</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value] : <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">key_value_pairs</a>) {</div>
+<div class="line"><span class="lineno">  302</span>    stat.add(key, value);</div>
+<div class="line"><span class="lineno">  303</span>  }</div>
+<div class="line"><span class="lineno">  304</span>}</div>
 <div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a38e662c12bcebf2b9d577d08d2c3655c"><div class="ttname"><a href="#a38e662c12bcebf2b9d577d08d2c3655c">openads_demo_module::OpenadsDemoModule::health_</a></div><div class="ttdeci">struct openads_demo_module::OpenadsDemoModule::DiagnosticStatus health_</div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_a27c9f8e3c43fa6872a47f9dd2da960ca"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::key_value_pairs</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; key_value_pairs</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00223">openads_demo_module.hpp:223</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_a9445a6850e728987e72243aaab9c361e"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::message</a></div><div class="ttdeci">std::string message</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00222">openads_demo_module.hpp:222</a></div></div>
-<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_aa20a1fafcf4963f1ca8f88f4f607756c"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::status</a></div><div class="ttdeci">unsigned char status</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00221">openads_demo_module.hpp:221</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_a27c9f8e3c43fa6872a47f9dd2da960ca"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::key_value_pairs</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; key_value_pairs</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00224">openads_demo_module.hpp:224</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_a9445a6850e728987e72243aaab9c361e"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::message</a></div><div class="ttdeci">std::string message</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00223">openads_demo_module.hpp:223</a></div></div>
+<div class="ttc" id="astructopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus_html_aa20a1fafcf4963f1ca8f88f4f607756c"><div class="ttname"><a href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">openads_demo_module::OpenadsDemoModule::DiagnosticStatus::status</a></div><div class="ttdeci">unsigned char status</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00222">openads_demo_module.hpp:222</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -767,14 +767,14 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00192">192</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  193</span>                                                                                      {</div>
-<div class="line"><span class="lineno">  194</span>  (void)request;</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received service request&quot;</span>);</div>
-<div class="line"><span class="lineno">  197</span> </div>
-<div class="line"><span class="lineno">  198</span>  response-&gt;success = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  199</span>}</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00195">195</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>                                                                                      {</div>
+<div class="line"><span class="lineno">  197</span>  (void)request;</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Received service request&quot;</span>);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>  response-&gt;success = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  202</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -812,14 +812,14 @@ template&lt;typename T &gt; </div>
 
 <p>Sets the health information and triggers publishing by diagnostic updater. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00303">303</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  305</span>                                                                                       {</div>
-<div class="line"><span class="lineno">  306</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = status;</div>
-<div class="line"><span class="lineno">  307</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">message</a> = msg;</div>
-<div class="line"><span class="lineno">  308</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">key_value_pairs</a> = key_value_pairs;</div>
-<div class="line"><span class="lineno">  309</span>  <a class="code hl_variable" href="#ad5572489e309a222630977dc0cdb2b0b">diagnostic_updater_</a>.force_update();</div>
-<div class="line"><span class="lineno">  310</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ad5572489e309a222630977dc0cdb2b0b"><div class="ttname"><a href="#ad5572489e309a222630977dc0cdb2b0b">openads_demo_module::OpenadsDemoModule::diagnostic_updater_</a></div><div class="ttdeci">diagnostic_updater::Updater diagnostic_updater_</div><div class="ttdoc">Diagnostic updater.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00215">openads_demo_module.hpp:215</a></div></div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00306">306</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  308</span>                                                                                       {</div>
+<div class="line"><span class="lineno">  309</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = status;</div>
+<div class="line"><span class="lineno">  310</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a9445a6850e728987e72243aaab9c361e">message</a> = msg;</div>
+<div class="line"><span class="lineno">  311</span>  <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#a27c9f8e3c43fa6872a47f9dd2da960ca">key_value_pairs</a> = key_value_pairs;</div>
+<div class="line"><span class="lineno">  312</span>  <a class="code hl_variable" href="#ad5572489e309a222630977dc0cdb2b0b">diagnostic_updater_</a>.force_update();</div>
+<div class="line"><span class="lineno">  313</span>}</div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ad5572489e309a222630977dc0cdb2b0b"><div class="ttname"><a href="#ad5572489e309a222630977dc0cdb2b0b">openads_demo_module::OpenadsDemoModule::diagnostic_updater_</a></div><div class="ttdeci">diagnostic_updater::Updater diagnostic_updater_</div><div class="ttdoc">Diagnostic updater.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00216">openads_demo_module.hpp:216</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -855,13 +855,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  131</span>      this-&gt;add_on_set_parameters_callback(std::bind(&amp;<a class="code hl_function" href="#abd6e8078bbc9f6563715f5c2daa8196a">OpenadsDemoModule::parametersCallback</a>, <span class="keyword">this</span>, std::placeholders::_1));</div>
 <div class="line"><span class="lineno">  132</span> </div>
 <div class="line"><span class="lineno">  133</span>  <span class="comment">// subscriber for handling incoming messages</span></div>
-<div class="line"><span class="lineno">  134</span>  <a class="code hl_variable" href="#ac1bb22f1479f56878cd9cb160df65f35">subscriber_</a> = this-&gt;create_subscription&lt;geometry_msgs::msg::PointStamped&gt;(</div>
-<div class="line"><span class="lineno">  135</span>      <span class="stringliteral">&quot;~/input&quot;</span>, 10, std::bind(&amp;<a class="code hl_function" href="#a5b19f928541256f32e26a66fc7410cc4">OpenadsDemoModule::topicCallback</a>, <span class="keyword">this</span>, std::placeholders::_1));</div>
-<div class="line"><span class="lineno">  136</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Subscribed to &#39;%s&#39;&quot;</span>, <a class="code hl_variable" href="#ac1bb22f1479f56878cd9cb160df65f35">subscriber_</a>-&gt;get_topic_name());</div>
+<div class="line"><span class="lineno">  134</span>  <a class="code hl_variable" href="#a0114c1991bf14e7b591e7f1ca6f11e55">subscriber_</a> = this-&gt;create_subscription&lt;perception_msgs::msg::EgoData&gt;(</div>
+<div class="line"><span class="lineno">  135</span>      <span class="stringliteral">&quot;~/input&quot;</span>, 10, std::bind(&amp;<a class="code hl_function" href="#aa582e304b5fe0535525f88c0e2d93527">OpenadsDemoModule::topicCallback</a>, <span class="keyword">this</span>, std::placeholders::_1));</div>
+<div class="line"><span class="lineno">  136</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Subscribed to &#39;%s&#39;&quot;</span>, <a class="code hl_variable" href="#a0114c1991bf14e7b591e7f1ca6f11e55">subscriber_</a>-&gt;get_topic_name());</div>
 <div class="line"><span class="lineno">  137</span> </div>
 <div class="line"><span class="lineno">  138</span>  <span class="comment">// publisher for publishing outgoing messages</span></div>
-<div class="line"><span class="lineno">  139</span>  <a class="code hl_variable" href="#a9e2a6774549f9f1ac22bdf4f2725bcae">publisher_</a> = this-&gt;create_publisher&lt;geometry_msgs::msg::PointStamped&gt;(<span class="stringliteral">&quot;~/output&quot;</span>, 10);</div>
-<div class="line"><span class="lineno">  140</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Publishing to &#39;%s&#39;&quot;</span>, <a class="code hl_variable" href="#a9e2a6774549f9f1ac22bdf4f2725bcae">publisher_</a>-&gt;get_topic_name());</div>
+<div class="line"><span class="lineno">  139</span>  <a class="code hl_variable" href="#aaaf0c5d9a6fda9996687caf74bc574cb">publisher_</a> = this-&gt;create_publisher&lt;perception_msgs::msg::EgoData&gt;(<span class="stringliteral">&quot;~/output&quot;</span>, 10);</div>
+<div class="line"><span class="lineno">  140</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Publishing to &#39;%s&#39;&quot;</span>, <a class="code hl_variable" href="#aaaf0c5d9a6fda9996687caf74bc574cb">publisher_</a>-&gt;get_topic_name());</div>
 <div class="line"><span class="lineno">  141</span> </div>
 <div class="line"><span class="lineno">  142</span>  <span class="comment">// service server for handling service calls</span></div>
 <div class="line"><span class="lineno">  143</span>  <a class="code hl_variable" href="#ae2f9fc12beeb6b04376efa78f9a1c920">service_server_</a> = this-&gt;create_service&lt;std_srvs::srv::SetBool&gt;(</div>
@@ -893,30 +893,30 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  169</span>  <span class="comment">// add diagnostic task for monitoring topic publisher with a moving average over min. 5 incoming messages based on expected minimum frequency</span></div>
 <div class="line"><span class="lineno">  170</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> diagnosed_publisher_frequency_window_size =</div>
 <div class="line"><span class="lineno">  171</span>      std::ceil(5 / (<a class="code hl_variable" href="#ad5572489e309a222630977dc0cdb2b0b">diagnostic_updater_</a>.getPeriod().seconds() * <a class="code hl_variable" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a5a923558ded476ae9f09f7cafc70bf73">min_frequency</a>));</div>
-<div class="line"><span class="lineno">  172</span>  <a class="code hl_variable" href="#a335cfa4053951faac646aed3422c8f7f">diagnosed_publisher_</a> = std::make_unique&lt;diagnostic_updater::DiagnosedPublisher&lt;geometry_msgs::msg::PointStamped&gt;&gt;(</div>
-<div class="line"><span class="lineno">  173</span>      <a class="code hl_variable" href="#a9e2a6774549f9f1ac22bdf4f2725bcae">publisher_</a>, <a class="code hl_variable" href="#ad5572489e309a222630977dc0cdb2b0b">diagnostic_updater_</a>,</div>
+<div class="line"><span class="lineno">  172</span>  <a class="code hl_variable" href="#a841fdc2ddf54aa3184fb075a30aceafd">diagnosed_publisher_</a> = std::make_unique&lt;diagnostic_updater::DiagnosedPublisher&lt;perception_msgs::msg::EgoData&gt;&gt;(</div>
+<div class="line"><span class="lineno">  173</span>      <a class="code hl_variable" href="#aaaf0c5d9a6fda9996687caf74bc574cb">publisher_</a>, <a class="code hl_variable" href="#ad5572489e309a222630977dc0cdb2b0b">diagnostic_updater_</a>,</div>
 <div class="line"><span class="lineno">  174</span>      diagnostic_updater::FrequencyStatusParam(&amp;<a class="code hl_variable" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a5a923558ded476ae9f09f7cafc70bf73">min_frequency</a>,</div>
 <div class="line"><span class="lineno">  175</span>                                               &amp;<a class="code hl_variable" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#ace51f792969e6a697c4deea8d7b67d69">max_frequency</a>, 0.0,</div>
 <div class="line"><span class="lineno">  176</span>                                               diagnosed_publisher_frequency_window_size),</div>
 <div class="line"><span class="lineno">  177</span>      diagnostic_updater::TimeStampStatusParam(<a class="code hl_variable" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a28f2ed9699e13a1f372b4e0dbd88a759">min_acceptable_timestamp_delta</a>,</div>
 <div class="line"><span class="lineno">  178</span>                                               <a class="code hl_variable" href="#a68f4cd4bc2da79385c8810b54c3640dd">diagnosed_publisher_config_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1TopicDiagnosticConfig.html#a2bd32f97b918d076808715c4df796501">max_acceptable_timestamp_delta</a>));</div>
 <div class="line"><span class="lineno">  179</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a01045b1e03a5b09b20ddfabb6af660f4"><div class="ttname"><a href="#a01045b1e03a5b09b20ddfabb6af660f4">openads_demo_module::OpenadsDemoModule::health</a></div><div class="ttdeci">void health(diagnostic_updater::DiagnosticStatusWrapper &amp;stat)</div><div class="ttdoc">Function called by diagnostic updater to populate diagnostics status.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00296">openads_demo_module.cpp:296</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a1ad7f81f53d4528d1913eb9ebffdf006"><div class="ttname"><a href="#a1ad7f81f53d4528d1913eb9ebffdf006">openads_demo_module::OpenadsDemoModule::topic_diagnostic_</a></div><div class="ttdeci">std::unique_ptr&lt; diagnostic_updater::TopicDiagnostic &gt; topic_diagnostic_</div><div class="ttdoc">Topic diagnostic to auto-diagnose a subscribed topic.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00229">openads_demo_module.hpp:229</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a26538066386ae2ecac702e9f2f0437b9"><div class="ttname"><a href="#a26538066386ae2ecac702e9f2f0437b9">openads_demo_module::OpenadsDemoModule::actionHandleCancel</a></div><div class="ttdeci">rclcpp_action::CancelResponse actionHandleCancel(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Processes action cancel requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00211">openads_demo_module.cpp:211</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a335cfa4053951faac646aed3422c8f7f"><div class="ttname"><a href="#a335cfa4053951faac646aed3422c8f7f">openads_demo_module::OpenadsDemoModule::diagnosed_publisher_</a></div><div class="ttdeci">std::unique_ptr&lt; diagnostic_updater::DiagnosedPublisher&lt; geometry_msgs::msg::PointStamped &gt; &gt; diagnosed_publisher_</div><div class="ttdoc">Diagnosed publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00239">openads_demo_module.hpp:239</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a3cd356c22b232ecdc91d3ad77fe0b05f"><div class="ttname"><a href="#a3cd356c22b232ecdc91d3ad77fe0b05f">openads_demo_module::OpenadsDemoModule::parameters_callback_</a></div><div class="ttdeci">OnSetParametersCallbackHandle::SharedPtr parameters_callback_</div><div class="ttdoc">Callback handle for dynamic parameter reconfiguration.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00180">openads_demo_module.hpp:180</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a41e89123542137591b46f0350e254c19"><div class="ttname"><a href="#a41e89123542137591b46f0350e254c19">openads_demo_module::OpenadsDemoModule::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdoc">Timer.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00205">openads_demo_module.hpp:205</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a4f1c2d911de8f67006a7e442400bd31e"><div class="ttname"><a href="#a4f1c2d911de8f67006a7e442400bd31e">openads_demo_module::OpenadsDemoModule::timerCallback</a></div><div class="ttdeci">void timerCallback()</div><div class="ttdoc">Processes timer triggers.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00272">openads_demo_module.cpp:272</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a5aaa82f6120f871b31f07cebf59b9352"><div class="ttname"><a href="#a5aaa82f6120f871b31f07cebf59b9352">openads_demo_module::OpenadsDemoModule::serviceCallback</a></div><div class="ttdeci">void serviceCallback(const std::shared_ptr&lt; std_srvs::srv::SetBool::Request &gt; request, std::shared_ptr&lt; std_srvs::srv::SetBool::Response &gt; response)</div><div class="ttdoc">Processes service requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00192">openads_demo_module.cpp:192</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a5b19f928541256f32e26a66fc7410cc4"><div class="ttname"><a href="#a5b19f928541256f32e26a66fc7410cc4">openads_demo_module::OpenadsDemoModule::topicCallback</a></div><div class="ttdeci">void topicCallback(const geometry_msgs::msg::PointStamped::ConstSharedPtr &amp;msg)</div><div class="ttdoc">Processes messages received by a subscriber.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00181">openads_demo_module.cpp:181</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a5feb17640089fd052c9f19c50f290020"><div class="ttname"><a href="#a5feb17640089fd052c9f19c50f290020">openads_demo_module::OpenadsDemoModule::actionHandleGoal</a></div><div class="ttdeci">rclcpp_action::GoalResponse actionHandleGoal(const rclcpp_action::GoalUUID &amp;uuid, std::shared_ptr&lt; const openads_demo_module_interfaces::action::Fibonacci::Goal &gt; goal)</div><div class="ttdoc">Processes action goal requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00201">openads_demo_module.cpp:201</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a897c569362403ea58361f7192590e613"><div class="ttname"><a href="#a897c569362403ea58361f7192590e613">openads_demo_module::OpenadsDemoModule::actionHandleAccepted</a></div><div class="ttdeci">void actionHandleAccepted(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Processes accepted action goal requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00220">openads_demo_module.cpp:220</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a9e2a6774549f9f1ac22bdf4f2725bcae"><div class="ttname"><a href="#a9e2a6774549f9f1ac22bdf4f2725bcae">openads_demo_module::OpenadsDemoModule::publisher_</a></div><div class="ttdeci">rclcpp::Publisher&lt; geometry_msgs::msg::PointStamped &gt;::SharedPtr publisher_</div><div class="ttdoc">Publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00190">openads_demo_module.hpp:190</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a01045b1e03a5b09b20ddfabb6af660f4"><div class="ttname"><a href="#a01045b1e03a5b09b20ddfabb6af660f4">openads_demo_module::OpenadsDemoModule::health</a></div><div class="ttdeci">void health(diagnostic_updater::DiagnosticStatusWrapper &amp;stat)</div><div class="ttdoc">Function called by diagnostic updater to populate diagnostics status.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00299">openads_demo_module.cpp:299</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a0114c1991bf14e7b591e7f1ca6f11e55"><div class="ttname"><a href="#a0114c1991bf14e7b591e7f1ca6f11e55">openads_demo_module::OpenadsDemoModule::subscriber_</a></div><div class="ttdeci">rclcpp::Subscription&lt; perception_msgs::msg::EgoData &gt;::SharedPtr subscriber_</div><div class="ttdoc">Subscriber.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00186">openads_demo_module.hpp:186</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a1ad7f81f53d4528d1913eb9ebffdf006"><div class="ttname"><a href="#a1ad7f81f53d4528d1913eb9ebffdf006">openads_demo_module::OpenadsDemoModule::topic_diagnostic_</a></div><div class="ttdeci">std::unique_ptr&lt; diagnostic_updater::TopicDiagnostic &gt; topic_diagnostic_</div><div class="ttdoc">Topic diagnostic to auto-diagnose a subscribed topic.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00230">openads_demo_module.hpp:230</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a26538066386ae2ecac702e9f2f0437b9"><div class="ttname"><a href="#a26538066386ae2ecac702e9f2f0437b9">openads_demo_module::OpenadsDemoModule::actionHandleCancel</a></div><div class="ttdeci">rclcpp_action::CancelResponse actionHandleCancel(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Processes action cancel requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00214">openads_demo_module.cpp:214</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a3cd356c22b232ecdc91d3ad77fe0b05f"><div class="ttname"><a href="#a3cd356c22b232ecdc91d3ad77fe0b05f">openads_demo_module::OpenadsDemoModule::parameters_callback_</a></div><div class="ttdeci">OnSetParametersCallbackHandle::SharedPtr parameters_callback_</div><div class="ttdoc">Callback handle for dynamic parameter reconfiguration.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00181">openads_demo_module.hpp:181</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a41e89123542137591b46f0350e254c19"><div class="ttname"><a href="#a41e89123542137591b46f0350e254c19">openads_demo_module::OpenadsDemoModule::timer_</a></div><div class="ttdeci">rclcpp::TimerBase::SharedPtr timer_</div><div class="ttdoc">Timer.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00206">openads_demo_module.hpp:206</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a4f1c2d911de8f67006a7e442400bd31e"><div class="ttname"><a href="#a4f1c2d911de8f67006a7e442400bd31e">openads_demo_module::OpenadsDemoModule::timerCallback</a></div><div class="ttdeci">void timerCallback()</div><div class="ttdoc">Processes timer triggers.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00275">openads_demo_module.cpp:275</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a5aaa82f6120f871b31f07cebf59b9352"><div class="ttname"><a href="#a5aaa82f6120f871b31f07cebf59b9352">openads_demo_module::OpenadsDemoModule::serviceCallback</a></div><div class="ttdeci">void serviceCallback(const std::shared_ptr&lt; std_srvs::srv::SetBool::Request &gt; request, std::shared_ptr&lt; std_srvs::srv::SetBool::Response &gt; response)</div><div class="ttdoc">Processes service requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00195">openads_demo_module.cpp:195</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a5feb17640089fd052c9f19c50f290020"><div class="ttname"><a href="#a5feb17640089fd052c9f19c50f290020">openads_demo_module::OpenadsDemoModule::actionHandleGoal</a></div><div class="ttdeci">rclcpp_action::GoalResponse actionHandleGoal(const rclcpp_action::GoalUUID &amp;uuid, std::shared_ptr&lt; const openads_demo_module_interfaces::action::Fibonacci::Goal &gt; goal)</div><div class="ttdoc">Processes action goal requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00204">openads_demo_module.cpp:204</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a841fdc2ddf54aa3184fb075a30aceafd"><div class="ttname"><a href="#a841fdc2ddf54aa3184fb075a30aceafd">openads_demo_module::OpenadsDemoModule::diagnosed_publisher_</a></div><div class="ttdeci">std::unique_ptr&lt; diagnostic_updater::DiagnosedPublisher&lt; perception_msgs::msg::EgoData &gt; &gt; diagnosed_publisher_</div><div class="ttdoc">Diagnosed publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00240">openads_demo_module.hpp:240</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a897c569362403ea58361f7192590e613"><div class="ttname"><a href="#a897c569362403ea58361f7192590e613">openads_demo_module::OpenadsDemoModule::actionHandleAccepted</a></div><div class="ttdeci">void actionHandleAccepted(const std::shared_ptr&lt; rclcpp_action::ServerGoalHandle&lt; openads_demo_module_interfaces::action::Fibonacci &gt; &gt; goal_handle)</div><div class="ttdoc">Processes accepted action goal requests.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00223">openads_demo_module.cpp:223</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_aa582e304b5fe0535525f88c0e2d93527"><div class="ttname"><a href="#aa582e304b5fe0535525f88c0e2d93527">openads_demo_module::OpenadsDemoModule::topicCallback</a></div><div class="ttdeci">void topicCallback(const perception_msgs::msg::EgoData::ConstSharedPtr &amp;msg)</div><div class="ttdoc">Processes messages received by a subscriber.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00181">openads_demo_module.cpp:181</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_aaaf0c5d9a6fda9996687caf74bc574cb"><div class="ttname"><a href="#aaaf0c5d9a6fda9996687caf74bc574cb">openads_demo_module::OpenadsDemoModule::publisher_</a></div><div class="ttdeci">rclcpp::Publisher&lt; perception_msgs::msg::EgoData &gt;::SharedPtr publisher_</div><div class="ttdoc">Publisher.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00191">openads_demo_module.hpp:191</a></div></div>
 <div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_abd6e8078bbc9f6563715f5c2daa8196a"><div class="ttname"><a href="#abd6e8078bbc9f6563715f5c2daa8196a">openads_demo_module::OpenadsDemoModule::parametersCallback</a></div><div class="ttdeci">rcl_interfaces::msg::SetParametersResult parametersCallback(const std::vector&lt; rclcpp::Parameter &gt; &amp;parameters)</div><div class="ttdoc">Handles reconfiguration when a parameter value is changed.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00110">openads_demo_module.cpp:110</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ac1bb22f1479f56878cd9cb160df65f35"><div class="ttname"><a href="#ac1bb22f1479f56878cd9cb160df65f35">openads_demo_module::OpenadsDemoModule::subscriber_</a></div><div class="ttdeci">rclcpp::Subscription&lt; geometry_msgs::msg::PointStamped &gt;::SharedPtr subscriber_</div><div class="ttdoc">Subscriber.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00185">openads_demo_module.hpp:185</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ae2f9fc12beeb6b04376efa78f9a1c920"><div class="ttname"><a href="#ae2f9fc12beeb6b04376efa78f9a1c920">openads_demo_module::OpenadsDemoModule::service_server_</a></div><div class="ttdeci">rclcpp::Service&lt; std_srvs::srv::SetBool &gt;::SharedPtr service_server_</div><div class="ttdoc">Service server.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00195">openads_demo_module.hpp:195</a></div></div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_aeaf4126e5c5c04250ff8eec829693d16"><div class="ttname"><a href="#aeaf4126e5c5c04250ff8eec829693d16">openads_demo_module::OpenadsDemoModule::action_server_</a></div><div class="ttdeci">rclcpp_action::Server&lt; openads_demo_module_interfaces::action::Fibonacci &gt;::SharedPtr action_server_</div><div class="ttdoc">Action server.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00200">openads_demo_module.hpp:200</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_ae2f9fc12beeb6b04376efa78f9a1c920"><div class="ttname"><a href="#ae2f9fc12beeb6b04376efa78f9a1c920">openads_demo_module::OpenadsDemoModule::service_server_</a></div><div class="ttdeci">rclcpp::Service&lt; std_srvs::srv::SetBool &gt;::SharedPtr service_server_</div><div class="ttdoc">Service server.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00196">openads_demo_module.hpp:196</a></div></div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_aeaf4126e5c5c04250ff8eec829693d16"><div class="ttname"><a href="#aeaf4126e5c5c04250ff8eec829693d16">openads_demo_module::OpenadsDemoModule::action_server_</a></div><div class="ttdeci">rclcpp_action::Server&lt; openads_demo_module_interfaces::action::Fibonacci &gt;::SharedPtr action_server_</div><div class="ttdoc">Action server.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8hpp_source.html#l00201">openads_demo_module.hpp:201</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -945,36 +945,36 @@ template&lt;typename T &gt; </div>
 
 <p>Processes timer triggers. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00272">272</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  272</span>                                      {</div>
-<div class="line"><span class="lineno">  273</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Timer triggered&quot;</span>);</div>
-<div class="line"><span class="lineno">  274</span> </div>
-<div class="line"><span class="lineno">  275</span>  <span class="comment">// TODO(unknown): Remove this demonstration of health status and implement real health checks using `setHealth()`</span></div>
-<div class="line"><span class="lineno">  276</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::ERROR) {</div>
-<div class="line"><span class="lineno">  277</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::ERROR,</div>
-<div class="line"><span class="lineno">  278</span>              <span class="stringliteral">&quot;Node is non-functional, unable to obtain, and/or yielding implausible data.&quot;</span>,</div>
-<div class="line"><span class="lineno">  279</span>              {{<span class="stringliteral">&quot;uptime&quot;</span>, std::to_string(this-&gt;get_clock()-&gt;now().seconds())}});</div>
-<div class="line"><span class="lineno">  280</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::WARN;</div>
-<div class="line"><span class="lineno">  281</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::WARN) {</div>
-<div class="line"><span class="lineno">  282</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::WARN,</div>
-<div class="line"><span class="lineno">  283</span>              <span class="stringliteral">&quot;Node is able to assess its own performance level, but is not able to reach its desired performance level.&quot;</span>);</div>
-<div class="line"><span class="lineno">  284</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::OK;</div>
-<div class="line"><span class="lineno">  285</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::OK) {</div>
-<div class="line"><span class="lineno">  286</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::OK,</div>
-<div class="line"><span class="lineno">  287</span>              <span class="stringliteral">&quot;Node is able to assess its own performance level and is reaching its desired performance level.&quot;</span>);</div>
-<div class="line"><span class="lineno">  288</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::STALE;</div>
-<div class="line"><span class="lineno">  289</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  290</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::STALE, <span class="stringliteral">&quot;Node performance level cannot be assessed&quot;</span>);</div>
-<div class="line"><span class="lineno">  291</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::ERROR;</div>
-<div class="line"><span class="lineno">  292</span>  }</div>
-<div class="line"><span class="lineno">  293</span>  <span class="comment">// end of demonstration</span></div>
-<div class="line"><span class="lineno">  294</span>}</div>
-<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a26859f55ae8f41c4ae4b23d657208584"><div class="ttname"><a href="#a26859f55ae8f41c4ae4b23d657208584">openads_demo_module::OpenadsDemoModule::setHealth</a></div><div class="ttdeci">void setHealth(const unsigned char status, const std::string &amp;msg, const std::map&lt; std::string, std::string &gt; &amp;key_value_pairs={})</div><div class="ttdoc">Sets the health information and triggers publishing by diagnostic updater.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00303">openads_demo_module.cpp:303</a></div></div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00275">275</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  275</span>                                      {</div>
+<div class="line"><span class="lineno">  276</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Timer triggered&quot;</span>);</div>
+<div class="line"><span class="lineno">  277</span> </div>
+<div class="line"><span class="lineno">  278</span>  <span class="comment">// TODO(unknown): Remove this demonstration of health status and implement real health checks using `setHealth()`</span></div>
+<div class="line"><span class="lineno">  279</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::ERROR) {</div>
+<div class="line"><span class="lineno">  280</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::ERROR,</div>
+<div class="line"><span class="lineno">  281</span>              <span class="stringliteral">&quot;Node is non-functional, unable to obtain, and/or yielding implausible data.&quot;</span>,</div>
+<div class="line"><span class="lineno">  282</span>              {{<span class="stringliteral">&quot;uptime&quot;</span>, std::to_string(this-&gt;get_clock()-&gt;now().seconds())}});</div>
+<div class="line"><span class="lineno">  283</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::WARN;</div>
+<div class="line"><span class="lineno">  284</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::WARN) {</div>
+<div class="line"><span class="lineno">  285</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::WARN,</div>
+<div class="line"><span class="lineno">  286</span>              <span class="stringliteral">&quot;Node is able to assess its own performance level, but is not able to reach its desired performance level.&quot;</span>);</div>
+<div class="line"><span class="lineno">  287</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::OK;</div>
+<div class="line"><span class="lineno">  288</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> == diagnostic_msgs::msg::DiagnosticStatus::OK) {</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::OK,</div>
+<div class="line"><span class="lineno">  290</span>              <span class="stringliteral">&quot;Node is able to assess its own performance level and is reaching its desired performance level.&quot;</span>);</div>
+<div class="line"><span class="lineno">  291</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::STALE;</div>
+<div class="line"><span class="lineno">  292</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  293</span>    <a class="code hl_function" href="#a26859f55ae8f41c4ae4b23d657208584">setHealth</a>(diagnostic_msgs::msg::DiagnosticStatus::STALE, <span class="stringliteral">&quot;Node performance level cannot be assessed&quot;</span>);</div>
+<div class="line"><span class="lineno">  294</span>    <a class="code hl_variable" href="#a38e662c12bcebf2b9d577d08d2c3655c">health_</a>.<a class="code hl_variable" href="structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c">status</a> = diagnostic_msgs::msg::DiagnosticStatus::ERROR;</div>
+<div class="line"><span class="lineno">  295</span>  }</div>
+<div class="line"><span class="lineno">  296</span>  <span class="comment">// end of demonstration</span></div>
+<div class="line"><span class="lineno">  297</span>}</div>
+<div class="ttc" id="aclassopenads__demo__module_1_1OpenadsDemoModule_html_a26859f55ae8f41c4ae4b23d657208584"><div class="ttname"><a href="#a26859f55ae8f41c4ae4b23d657208584">openads_demo_module::OpenadsDemoModule::setHealth</a></div><div class="ttdeci">void setHealth(const unsigned char status, const std::string &amp;msg, const std::map&lt; std::string, std::string &gt; &amp;key_value_pairs={})</div><div class="ttdoc">Sets the health information and triggers publishing by diagnostic updater.</div><div class="ttdef"><b>Definition</b> <a href="openads__demo__module_8cpp_source.html#l00306">openads_demo_module.cpp:306</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a5b19f928541256f32e26a66fc7410cc4" name="a5b19f928541256f32e26a66fc7410cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b19f928541256f32e26a66fc7410cc4">&#9670;&#160;</a></span>topicCallback()</h2>
+<a id="aa582e304b5fe0535525f88c0e2d93527" name="aa582e304b5fe0535525f88c0e2d93527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa582e304b5fe0535525f88c0e2d93527">&#9670;&#160;</a></span>topicCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -985,7 +985,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void openads_demo_module::OpenadsDemoModule::topicCallback </td>
           <td>(</td>
-          <td class="paramtype">const geometry_msgs::msg::PointStamped::ConstSharedPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
+          <td class="paramtype">const perception_msgs::msg::EgoData::ConstSharedPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1005,16 +1005,19 @@ template&lt;typename T &gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="openads__demo__module_8cpp_source.html#l00181">181</a> of file <a class="el" href="openads__demo__module_8cpp_source.html">openads_demo_module.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  181</span>                                                                                           {</div>
+<div class="fragment"><div class="line"><span class="lineno">  181</span>                                                                                        {</div>
 <div class="line"><span class="lineno">  182</span>  <a class="code hl_variable" href="#a1ad7f81f53d4528d1913eb9ebffdf006">topic_diagnostic_</a>-&gt;tick(msg-&gt;header.stamp);</div>
 <div class="line"><span class="lineno">  183</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Message received with stamp: &#39;%d&#39;&quot;</span>, msg-&gt;header.stamp.sec);</div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span>  <span class="comment">// publish message</span></div>
-<div class="line"><span class="lineno">  186</span>  geometry_msgs::msg::PointStamped out_msg;</div>
-<div class="line"><span class="lineno">  187</span>  out_msg = *msg;</div>
-<div class="line"><span class="lineno">  188</span>  <a class="code hl_variable" href="#a335cfa4053951faac646aed3422c8f7f">diagnosed_publisher_</a>-&gt;publish(out_msg);</div>
-<div class="line"><span class="lineno">  189</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Message published with stamp: &#39;%d&#39;&quot;</span>, out_msg.header.stamp.sec);</div>
-<div class="line"><span class="lineno">  190</span>}</div>
+<div class="line"><span class="lineno">  184</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;x=%f, y=%f, z=%f, yaw=%f&quot;</span>, perception_msgs::object_access::getX(*msg),</div>
+<div class="line"><span class="lineno">  185</span>              perception_msgs::object_access::getY(*msg), perception_msgs::object_access::getZ(*msg),</div>
+<div class="line"><span class="lineno">  186</span>              perception_msgs::object_access::getYawInDeg(*msg));</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>  <span class="comment">// publish message</span></div>
+<div class="line"><span class="lineno">  189</span>  perception_msgs::msg::EgoData out_msg;</div>
+<div class="line"><span class="lineno">  190</span>  out_msg = *msg;</div>
+<div class="line"><span class="lineno">  191</span>  <a class="code hl_variable" href="#a841fdc2ddf54aa3184fb075a30aceafd">diagnosed_publisher_</a>-&gt;publish(out_msg);</div>
+<div class="line"><span class="lineno">  192</span>  RCLCPP_INFO(this-&gt;get_logger(), <span class="stringliteral">&quot;Message published with stamp: &#39;%d&#39;&quot;</span>, out_msg.header.stamp.sec);</div>
+<div class="line"><span class="lineno">  193</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1041,7 +1044,7 @@ template&lt;typename T &gt; </div>
 
 <p>Action server. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00200">200</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00201">201</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1067,12 +1070,12 @@ template&lt;typename T &gt; </div>
 
 <p>Auto-reconfigurable parameters for dynamic reconfiguration. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00175">175</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00176">176</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a335cfa4053951faac646aed3422c8f7f" name="a335cfa4053951faac646aed3422c8f7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335cfa4053951faac646aed3422c8f7f">&#9670;&#160;</a></span>diagnosed_publisher_</h2>
+<a id="a841fdc2ddf54aa3184fb075a30aceafd" name="a841fdc2ddf54aa3184fb075a30aceafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841fdc2ddf54aa3184fb075a30aceafd">&#9670;&#160;</a></span>diagnosed_publisher_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1081,7 +1084,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;diagnostic_updater::DiagnosedPublisher&lt;geometry_msgs::msg::PointStamped&gt; &gt; openads_demo_module::OpenadsDemoModule::diagnosed_publisher_</td>
+          <td class="memname">std::unique_ptr&lt;diagnostic_updater::DiagnosedPublisher&lt;perception_msgs::msg::EgoData&gt; &gt; openads_demo_module::OpenadsDemoModule::diagnosed_publisher_</td>
         </tr>
       </table>
   </td>
@@ -1093,7 +1096,7 @@ template&lt;typename T &gt; </div>
 
 <p>Diagnosed publisher. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00239">239</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00240">240</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1122,7 @@ template&lt;typename T &gt; </div>
 
 <p>Configuration for auto-diagnosed publisher. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00244">244</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00245">245</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1145,8 +1148,8 @@ template&lt;typename T &gt; </div>
 
 <p>Diagnostic updater. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00215">215</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  215</span>{<span class="keyword">this</span>};</div>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00216">216</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  216</span>{<span class="keyword">this</span>};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1194,7 +1197,7 @@ template&lt;typename T &gt; </div>
 
 <p>Dummy parameter (parameter) </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00210">210</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00211">211</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1220,12 +1223,12 @@ template&lt;typename T &gt; </div>
 
 <p>Callback handle for dynamic parameter reconfiguration. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00180">180</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00181">181</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a9e2a6774549f9f1ac22bdf4f2725bcae" name="a9e2a6774549f9f1ac22bdf4f2725bcae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e2a6774549f9f1ac22bdf4f2725bcae">&#9670;&#160;</a></span>publisher_</h2>
+<a id="aaaf0c5d9a6fda9996687caf74bc574cb" name="aaaf0c5d9a6fda9996687caf74bc574cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf0c5d9a6fda9996687caf74bc574cb">&#9670;&#160;</a></span>publisher_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1234,7 +1237,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rclcpp::Publisher&lt;geometry_msgs::msg::PointStamped&gt;::SharedPtr openads_demo_module::OpenadsDemoModule::publisher_</td>
+          <td class="memname">rclcpp::Publisher&lt;perception_msgs::msg::EgoData&gt;::SharedPtr openads_demo_module::OpenadsDemoModule::publisher_</td>
         </tr>
       </table>
   </td>
@@ -1246,7 +1249,7 @@ template&lt;typename T &gt; </div>
 
 <p>Publisher. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00190">190</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00191">191</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1272,12 +1275,12 @@ template&lt;typename T &gt; </div>
 
 <p>Service server. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00195">195</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00196">196</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ac1bb22f1479f56878cd9cb160df65f35" name="ac1bb22f1479f56878cd9cb160df65f35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1bb22f1479f56878cd9cb160df65f35">&#9670;&#160;</a></span>subscriber_</h2>
+<a id="a0114c1991bf14e7b591e7f1ca6f11e55" name="a0114c1991bf14e7b591e7f1ca6f11e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0114c1991bf14e7b591e7f1ca6f11e55">&#9670;&#160;</a></span>subscriber_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1286,7 +1289,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">rclcpp::Subscription&lt;geometry_msgs::msg::PointStamped&gt;::SharedPtr openads_demo_module::OpenadsDemoModule::subscriber_</td>
+          <td class="memname">rclcpp::Subscription&lt;perception_msgs::msg::EgoData&gt;::SharedPtr openads_demo_module::OpenadsDemoModule::subscriber_</td>
         </tr>
       </table>
   </td>
@@ -1298,7 +1301,7 @@ template&lt;typename T &gt; </div>
 
 <p>Subscriber. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00185">185</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00186">186</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1327,7 @@ template&lt;typename T &gt; </div>
 
 <p>Timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00205">205</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00206">206</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1350,7 +1353,7 @@ template&lt;typename T &gt; </div>
 
 <p>Topic diagnostic to auto-diagnose a subscribed topic. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00229">229</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00230">230</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1379,7 @@ template&lt;typename T &gt; </div>
 
 <p>Configuration for auto-diagnosed topic subscription. </p>
 
-<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00234">234</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="openads__demo__module_8hpp_source.html#l00235">235</a> of file <a class="el" href="openads__demo__module_8hpp_source.html">openads_demo_module.hpp</a>.</p>
 
 </div>
 </div>
