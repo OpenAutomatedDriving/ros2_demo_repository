@@ -20,13 +20,13 @@ flowchart LR
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/input` | `geometry_msgs/msg/PointStamped` | Demo input topic |
+| `~/input` | `perception_msgs/msg/EgoData` | Demo input |
 
 #### Published Topics
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/output` | `geometry_msgs/msg/PointStamped` | Demo output topic |
+| `~/output` | `perception_msgs/msg/EgoData` | Demo output |
 
 #### Service Servers
 

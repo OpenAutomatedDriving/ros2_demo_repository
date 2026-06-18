@@ -9,7 +9,8 @@
 
 #include <diagnostic_updater/diagnostic_updater.hpp>
 #include <diagnostic_updater/publisher.hpp>
-#include <geometry_msgs/msg/point_stamped.hpp>
+#include <perception_msgs/msg/ego_data.hpp>
+#include <perception_msgs_utils/object_access.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <std_srvs/srv/set_bool.hpp>
@@ -105,7 +106,7 @@ class OpenadsDemoModule : public rclcpp::Node {
    *
    * @param msg message
    */
-  void topicCallback(const geometry_msgs::msg::PointStamped::ConstSharedPtr& msg);
+  void topicCallback(const perception_msgs::msg::EgoData::ConstSharedPtr& msg);
 
   /**
    * @brief Processes service requests
@@ -182,12 +183,12 @@ class OpenadsDemoModule : public rclcpp::Node {
   /**
    * @brief Subscriber
    */
-  rclcpp::Subscription<geometry_msgs::msg::PointStamped>::SharedPtr subscriber_;
+  rclcpp::Subscription<perception_msgs::msg::EgoData>::SharedPtr subscriber_;
 
   /**
    * @brief Publisher
    */
-  rclcpp::Publisher<geometry_msgs::msg::PointStamped>::SharedPtr publisher_;
+  rclcpp::Publisher<perception_msgs::msg::EgoData>::SharedPtr publisher_;
 
   /**
    * @brief Service server
@@ -236,7 +237,7 @@ class OpenadsDemoModule : public rclcpp::Node {
   /**
    * @brief Diagnosed publisher
    */
-  std::unique_ptr<diagnostic_updater::DiagnosedPublisher<geometry_msgs::msg::PointStamped>> diagnosed_publisher_;
+  std::unique_ptr<diagnostic_updater::DiagnosedPublisher<perception_msgs::msg::EgoData>> diagnosed_publisher_;
 
   /**
    * @brief Configuration for auto-diagnosed publisher

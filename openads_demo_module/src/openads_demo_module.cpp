@@ -131,12 +131,12 @@ void OpenadsDemoModule::setup() {
       this->add_on_set_parameters_callback(std::bind(&OpenadsDemoModule::parametersCallback, this, std::placeholders::_1));
 
   // subscriber for handling incoming messages
-  subscriber_ = this->create_subscription<geometry_msgs::msg::PointStamped>(
+  subscriber_ = this->create_subscription<perception_msgs::msg::EgoData>(
       "~/input", 10, std::bind(&OpenadsDemoModule::topicCallback, this, std::placeholders::_1));
   RCLCPP_INFO(this->get_logger(), "Subscribed to '%s'", subscriber_->get_topic_name());
 
   // publisher for publishing outgoing messages
-  publisher_ = this->create_publisher<geometry_msgs::msg::PointStamped>("~/output", 10);
+  publisher_ = this->create_publisher<perception_msgs::msg::EgoData>("~/output", 10);
   RCLCPP_INFO(this->get_logger(), "Publishing to '%s'", publisher_->get_topic_name());
 
   // service server for handling service calls
@@ -169,7 +169,7 @@ void OpenadsDemoModule::setup() {
   // add diagnostic task for monitoring topic publisher with a moving average over min. 5 incoming messages based on expected minimum frequency
   const int diagnosed_publisher_frequency_window_size =
       std::ceil(5 / (diagnostic_updater_.getPeriod().seconds() * diagnosed_publisher_config_.min_frequency));
-  diagnosed_publisher_ = std::make_unique<diagnostic_updater::DiagnosedPublisher<geometry_msgs::msg::PointStamped>>(
+  diagnosed_publisher_ = std::make_unique<diagnostic_updater::DiagnosedPublisher<perception_msgs::msg::EgoData>>(
       publisher_, diagnostic_updater_,
       diagnostic_updater::FrequencyStatusParam(&diagnosed_publisher_config_.min_frequency,
                                                &diagnosed_publisher_config_.max_frequency, 0.0,
@@ -178,12 +178,15 @@ void OpenadsDemoModule::setup() {
                                                diagnosed_publisher_config_.max_acceptable_timestamp_delta));
 }
 
-void OpenadsDemoModule::topicCallback(const geometry_msgs::msg::PointStamped::ConstSharedPtr& msg) {
+void OpenadsDemoModule::topicCallback(const perception_msgs::msg::EgoData::ConstSharedPtr& msg) {
   topic_diagnostic_->tick(msg->header.stamp);
   RCLCPP_INFO(this->get_logger(), "Message received with stamp: '%d'", msg->header.stamp.sec);
+  RCLCPP_INFO(this->get_logger(), "x=%f, y=%f, z=%f, yaw=%f", perception_msgs::object_access::getX(*msg),
+              perception_msgs::object_access::getY(*msg), perception_msgs::object_access::getZ(*msg),
+              perception_msgs::object_access::getYawInDeg(*msg));
 
   // publish message
-  geometry_msgs::msg::PointStamped out_msg;
+  perception_msgs::msg::EgoData out_msg;
   out_msg = *msg;
   diagnosed_publisher_->publish(out_msg);
   RCLCPP_INFO(this->get_logger(), "Message published with stamp: '%d'", out_msg.header.stamp.sec);
