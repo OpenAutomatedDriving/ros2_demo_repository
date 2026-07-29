@@ -27,7 +27,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 > [**GitHub Repository Settings**](https://github.com/openads-project/openads_demo_module/settings):
 >   - About (Sidebar):
 >     - Description: `<short_title_description_from_readme>`
->     - Website: ☑ Use your GitHub Pages website
+>     - Website: `https://openads-project.github.io/`
 >     - Topics: e.g. `openadservice`, `openadsuite`, `openadstack`, `openadsim`, ...
 >   - Settings → General → Pull Requests → ☑ Allow auto-merge (only possible to set once public)
 >   - Settings → General → Pull Requests → ☑ Automatically delete head branches
