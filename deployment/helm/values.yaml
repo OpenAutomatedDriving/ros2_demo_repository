@@ -1,6 +1,6 @@
 openadservice:
   name: openads-demo-service
-  image: ghcr.io/openads-project/openads_demo_service:v1.0.0
+  image: ghcr.io/openads-project/openads_demo_service:v2.0.0
   env:
     # --- name ------
     NAMESPACE: /

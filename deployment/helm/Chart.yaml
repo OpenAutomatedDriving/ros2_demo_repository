@@ -1,7 +1,7 @@
 apiVersion: v2
 name: openads-demo-service
-version: 1.0.0
-appVersion: 1.0.0
+version: 2.0.0
+appVersion: 2.0.0
 description: Demo repository for an OpenADS module
 dependencies:
   - repository: oci://ghcr.io/openads-project/openads-helm
