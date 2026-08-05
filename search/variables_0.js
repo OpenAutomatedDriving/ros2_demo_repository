@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['action_5fserver_5f_0',['action_server_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#aeaf4126e5c5c04250ff8eec829693d16',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['auto_5freconfigurable_5fparams_5f_1',['auto_reconfigurable_params_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ace41587477bd8a99946051a5a8705ef9',1,'openads_demo_module::OpenadsDemoModule']]]
+  ['action_5fserver_5f_0',['action_server_',['../classopenads__demo__service_1_1OpenadsDemoService.html#afef309c8864f8b026eae96f3210661bf',1,'openads_demo_service::OpenadsDemoService']]],
+  ['auto_5freconfigurable_5fparams_5f_1',['auto_reconfigurable_params_',['../classopenads__demo__service_1_1OpenadsDemoService.html#ad1716e94b0d8cde6c8332ae08a277b4b',1,'openads_demo_service::OpenadsDemoService']]]
 ];

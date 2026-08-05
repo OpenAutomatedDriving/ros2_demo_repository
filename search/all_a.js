@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['param_5f_0',['param_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ae7412d39d5268d7d5707a937f022b846',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['parameters_5fcallback_5f_1',['parameters_callback_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a3cd356c22b232ecdc91d3ad77fe0b05f',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['parameterscallback_2',['parametersCallback',['../classopenads__demo__module_1_1OpenadsDemoModule.html#abd6e8078bbc9f6563715f5c2daa8196a',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['publisher_5f_3',['publisher_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#aaaf0c5d9a6fda9996687caf74bc574cb',1,'openads_demo_module::OpenadsDemoModule']]]
+  ['param_5f_0',['param_',['../classopenads__demo__service_1_1OpenadsDemoService.html#a13a07de8e7b277f9605cda74082f6d69',1,'openads_demo_service::OpenadsDemoService']]],
+  ['parameters_5fcallback_5f_1',['parameters_callback_',['../classopenads__demo__service_1_1OpenadsDemoService.html#a2faf721391c218614ba04d7557d183e1',1,'openads_demo_service::OpenadsDemoService']]],
+  ['parameterscallback_2',['parametersCallback',['../classopenads__demo__service_1_1OpenadsDemoService.html#af49f5b1152eb572e5ef519ca4b80e9d0',1,'openads_demo_service::OpenadsDemoService']]],
+  ['publisher_5f_3',['publisher_',['../classopenads__demo__service_1_1OpenadsDemoService.html#ae8b2d6bbe4b58ad2520579a574e44a41',1,'openads_demo_service::OpenadsDemoService']]]
 ];

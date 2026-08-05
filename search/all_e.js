@@ -1,10 +1,10 @@
 var searchData=
 [
   ['tests_0',['Run Tests',['../index.html#autotoc_md5',1,'']]],
-  ['timer_5f_1',['timer_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a41e89123542137591b46f0350e254c19',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['timercallback_2',['timerCallback',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a4f1c2d911de8f67006a7e442400bd31e',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['topic_5fdiagnostic_5f_3',['topic_diagnostic_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a1ad7f81f53d4528d1913eb9ebffdf006',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['topic_5fdiagnostic_5fconfig_5f_4',['topic_diagnostic_config_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#adfb14cebec1f7e19edb0c4027f81bf91',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['topiccallback_5',['topicCallback',['../classopenads__demo__module_1_1OpenadsDemoModule.html#aa582e304b5fe0535525f88c0e2d93527',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['topicdiagnosticconfig_6',['TopicDiagnosticConfig',['../structopenads__demo__module_1_1TopicDiagnosticConfig.html',1,'openads_demo_module']]]
+  ['timer_5f_1',['timer_',['../classopenads__demo__service_1_1OpenadsDemoService.html#a643d9a9819dd9dbc07e7b37b68129927',1,'openads_demo_service::OpenadsDemoService']]],
+  ['timercallback_2',['timerCallback',['../classopenads__demo__service_1_1OpenadsDemoService.html#a6b92b89e7d17698b242c3eaf86069b89',1,'openads_demo_service::OpenadsDemoService']]],
+  ['topic_5fdiagnostic_5f_3',['topic_diagnostic_',['../classopenads__demo__service_1_1OpenadsDemoService.html#a7cb4bac46c42f17b4c1ec2eb2f64133d',1,'openads_demo_service::OpenadsDemoService']]],
+  ['topic_5fdiagnostic_5fconfig_5f_4',['topic_diagnostic_config_',['../classopenads__demo__service_1_1OpenadsDemoService.html#a1e85d07d28fee3ae1a8dbcfce6ec12d4',1,'openads_demo_service::OpenadsDemoService']]],
+  ['topiccallback_5',['topicCallback',['../classopenads__demo__service_1_1OpenadsDemoService.html#a015f52e599a2064e3b9768e4d81782c4',1,'openads_demo_service::OpenadsDemoService']]],
+  ['topicdiagnosticconfig_6',['TopicDiagnosticConfig',['../structopenads__demo__service_1_1TopicDiagnosticConfig.html',1,'openads_demo_service']]]
 ];

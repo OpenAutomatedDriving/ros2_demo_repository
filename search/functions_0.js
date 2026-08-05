@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['actionexecute_0',['actionExecute',['../classopenads__demo__module_1_1OpenadsDemoModule.html#acbda5cf4d7ddd3195c0c4c5814b9c296',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['actionhandleaccepted_1',['actionHandleAccepted',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a897c569362403ea58361f7192590e613',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['actionhandlecancel_2',['actionHandleCancel',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a26538066386ae2ecac702e9f2f0437b9',1,'openads_demo_module::OpenadsDemoModule']]],
-  ['actionhandlegoal_3',['actionHandleGoal',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a5feb17640089fd052c9f19c50f290020',1,'openads_demo_module::OpenadsDemoModule']]]
+  ['actionexecute_0',['actionExecute',['../classopenads__demo__service_1_1OpenadsDemoService.html#ac959b87d452cbe68dc07b0be14c0ed5f',1,'openads_demo_service::OpenadsDemoService']]],
+  ['actionhandleaccepted_1',['actionHandleAccepted',['../classopenads__demo__service_1_1OpenadsDemoService.html#ad3849657a75f614a58d52947a46f6bde',1,'openads_demo_service::OpenadsDemoService']]],
+  ['actionhandlecancel_2',['actionHandleCancel',['../classopenads__demo__service_1_1OpenadsDemoService.html#a4bfef43e3d69c4707f83701a0d3b87a5',1,'openads_demo_service::OpenadsDemoService']]],
+  ['actionhandlegoal_3',['actionHandleGoal',['../classopenads__demo__service_1_1OpenadsDemoService.html#a6b870648493031b4121eae40a29f3578',1,'openads_demo_service::OpenadsDemoService']]]
 ];

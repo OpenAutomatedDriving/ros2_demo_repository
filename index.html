@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>openads_demo_module: openads_demo_module</title>
+<title>openads_demo_service: openads_demo_service</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">openads_demo_module<span id="projectnumber">&#160;v1.0.0</span>
+   <div id="projectname">openads_demo_service<span id="projectnumber">&#160;v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -97,13 +97,13 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title"><a class="el" href="namespaceopenads__demo__module.html">openads_demo_module</a> </div></div>
+  <div class="headertitle"><div class="title"><a class="el" href="namespaceopenads__demo__service.html">openads_demo_service</a> </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a></p>
 <p align="center"></p>
-<p><a href="https://github.com/openads-project"><img src="https://img.shields.io/badge/OpenADS-f5ff01" alt="" class="inline"/></a> <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e" alt="" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_module/releases/latest"><img src="https://img.shields.io/github/v/release/openads-project/openads_demo_module" alt="" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_module/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_demo_module" alt="" class="inline"/></a> <br  />
- <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://openads-project.github.io/openads_demo_module"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docs.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> </p>
+<p><a href="https://openads-project.github.io"><img src="https://img.shields.io/badge/OpenADS-45ccc6" alt="" class="inline"/></a> <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e" alt="" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_service/releases/latest"><img src="https://img.shields.io/github/v/release/openads-project/openads_demo_service" alt="" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_demo_service" alt="" class="inline"/></a> <br  />
+ <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/docker-ros.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/compose-oci.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/compose-oci.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/helm-oci.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/helm-oci.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://openads-project.github.io/openads_demo_service"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/docs.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/consistency.yml/badge.svg" alt="" style="pointer-events: none;" class="inline"/></a> </p>
 <p><b>Demo repository for an OpenADS module</b></p>
 <p>This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.</p>
 <blockquote class="doxtable">
@@ -114,10 +114,10 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <li>Settings → Actions → General → Workflow permissions → ○ Read and write permissions</li>
 <li>Settings → Packages → Package creation → ☑ Public</li>
 </ul>
-<p><a href="https://github.com/openads-project/openads_demo_module/settings"><b>GitHub Repository Settings</b></a>:</p><ul>
+<p><a href="https://github.com/openads-project/openads_demo_service/settings"><b>GitHub Repository Settings</b></a>:</p><ul>
 <li>About (Sidebar):<ul>
 <li>Description: <code>&lt;short_title_description_from_readme&gt;</code></li>
-<li>Website: ☑ Use your GitHub Pages website</li>
+<li>Website: <code><a href="https://openads-project.github.io/">https://openads-project.github.io/</a></code></li>
 <li>Topics: e.g. <code>openadservice</code>, <code>openadsuite</code>, <code>openadstack</code>, <code>openadsim</code>, ...</li>
 </ul>
 </li>
@@ -126,7 +126,10 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <li>Settings → Branches → Add classic branch protection rule (only takes effect once public)<ul>
 <li>Branch name pattern: <code>main</code></li>
 <li>☑ Require a pull request before merging</li>
-<li>☑ Require status checks to pass before merging (only possible to set once public)</li>
+<li>☑ Require status checks to pass before merging (only possible to set once public)<ul>
+<li>Status checks that are required: <code>docker-ros</code>, <code>compose-oci</code>, <code>helm-oci</code>, <code>consistency</code></li>
+</ul>
+</li>
 <li>☑ Require conversation resolution before merging (only possible to set once public)</li>
 </ul>
 </li>
@@ -139,15 +142,15 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </ul>
 </blockquote>
 <p><b>🚀 <a href="#-quick-start">Quick Start</a></b> • <b>💻 <a href="#-development">Development</a></b> • <b>📝 <a href="#-documentation">Documentation</a></b> </p>
-<dl class="section important"><dt>Important</dt><dd>This repository is part of <a href="https://github.com/openads-project"><em><b>OpenADS</b></em></a>, the <em>Open Automated Driving Systems</em> project. <em>OpenADS</em> and its modules have been initiated and are currently being maintained by the <a href="https://www.ika.rwth-aachen.de/de/"><b>Institute for Automotive Engineering (ika) at RWTH Aachen University</b></a>.</dd></dl>
+<dl class="section important"><dt>Important</dt><dd>This repository is part of <a href="https://openads-project.github.io/"><em><b>OpenADS</b></em></a>, the <em>Open Automated Driving Systems</em> project. <em>OpenADS</em> and its modules have been initiated and are currently being maintained by the <a href="https://www.ika.rwth-aachen.de/de/"><b>Institute for Automotive Engineering (ika) at RWTH Aachen University</b></a>.</dd></dl>
 <h1><a class="anchor" id="autotoc_md1"></a>
 🚀 Quick Start</h1>
 <ol type="1">
-<li>Start a container of the pre-built runtime image. <div class="fragment"><div class="line">docker run --rm -it ghcr.io/openads-project/openads_demo_module:latest bash</div>
+<li>Start a container of the pre-built runtime image. <div class="fragment"><div class="line">docker run --rm -it ghcr.io/openads-project/openads_demo_service:latest bash</div>
 </div><!-- fragment --></li>
 </ol>
 <ol type="1">
-<li>Inside the container, launch the pre-built nodes. <div class="fragment"><div class="line">ros2 launch openads_demo_module openads_demo_module_launch.py</div>
+<li>Inside the container, launch the pre-built nodes. <div class="fragment"><div class="line">ros2 launch openads_demo_service openads_demo_service_launch.py</div>
 </div><!-- fragment --></li>
 </ol>
 <h1><a class="anchor" id="autotoc_md2"></a>
@@ -155,11 +158,11 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <h2><a class="anchor" id="autotoc_md3"></a>
 Set up Development Environment</h2>
 <ol type="1">
-<li>Clone the repository. <div class="fragment"><div class="line">git clone https://github.com/openads-project/openads_demo_module.git</div>
+<li>Clone the repository. <div class="fragment"><div class="line">git clone https://github.com/openads-project/openads_demo_service.git</div>
 </div><!-- fragment --></li>
 </ol>
 <ol type="1">
-<li>Initialize the <a href="https://github.com/openads-project/openads-dev-environment"><code>.openads-dev-environment</code></a> submodule containing development environment configuration. <div class="fragment"><div class="line">cd openads_demo_module</div>
+<li>Initialize the <a href="https://github.com/openads-project/openads-dev-environment"><code>.openads-dev-environment</code></a> submodule containing development environment configuration. <div class="fragment"><div class="line">cd openads_demo_service</div>
 <div class="line">git submodule update --init --recursive</div>
 </div><!-- fragment --></li>
 </ol>
@@ -192,14 +195,14 @@ Run Tests</h2>
 <div class="line">colcon test-result --verbose</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 📝 Documentation</h1>
-<p>Package and node interfaces are documented in the respective package READMEs listed below. Implementation details are found in the <a href="https://openads-project.github.io/openads_demo_module">Source Code Documentation</a>.</p>
+<p>Package and node interfaces are documented in the respective package READMEs listed below. Implementation details are found in the <a href="https://openads-project.github.io/openads_demo_service">Source Code Documentation</a>.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Package   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">openads_demo_module   </td><td class="markdownTableBodyNone">ROS 2 C++ package template for OpenADS    </td></tr>
+<td class="markdownTableBodyNone">openads_demo_service   </td><td class="markdownTableBodyNone">ROS 2 C++ package template for OpenADS    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">openads_demo_module_interfaces   </td><td class="markdownTableBodyNone">ROS interface definitions for <a class="el" href="namespaceopenads__demo__module.html">openads_demo_module</a>   </td></tr>
+<td class="markdownTableBodyNone">openads_demo_service_interfaces   </td><td class="markdownTableBodyNone">ROS interface definitions for <a class="el" href="namespaceopenads__demo__service.html">openads_demo_service</a>   </td></tr>
 </table>
 <h1><a class="anchor" id="autotoc_md7"></a>
 ⚖️ Licensing</h1>

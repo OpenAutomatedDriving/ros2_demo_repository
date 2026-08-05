@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openadsdemomodule_0',['OpenadsDemoModule',['../classopenads__demo__module_1_1OpenadsDemoModule.html',1,'openads_demo_module']]]
+  ['openadsdemoservice_0',['OpenadsDemoService',['../classopenads__demo__service_1_1OpenadsDemoService.html',1,'openads_demo_service']]]
 ];

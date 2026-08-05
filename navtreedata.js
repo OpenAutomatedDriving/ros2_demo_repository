@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "openads_demo_module", "index.html", [
+  [ "openads_demo_service", "index.html", [
     [ "🚀 Quick Start", "index.html#autotoc_md1", null ],
     [ "💻 Development", "index.html#autotoc_md2", [
       [ "Set up Development Environment", "index.html#autotoc_md3", null ],

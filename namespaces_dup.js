@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "openads_demo_module", "namespaceopenads__demo__module.html", "namespaceopenads__demo__module" ]
+    [ "openads_demo_service", "namespaceopenads__demo__service.html", "namespaceopenads__demo__service" ]
 ];
