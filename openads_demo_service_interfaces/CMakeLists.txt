@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(openads_demo_module_interfaces)
+project(openads_demo_service_interfaces)
 
 find_package(rosidl_default_generators REQUIRED)
 

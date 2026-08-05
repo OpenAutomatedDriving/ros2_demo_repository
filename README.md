@@ -1,16 +1,16 @@
-# openads_demo_module
+# openads_demo_service
 
 <p align="center">
   <a href="https://openads-project.github.io"><img src="https://img.shields.io/badge/OpenADS-45ccc6"/></a>
   <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/></a>
-  <a href="https://github.com/openads-project/openads_demo_module/releases/latest"><img src="https://img.shields.io/github/v/release/openads-project/openads_demo_module"/></a>
-  <a href="https://github.com/openads-project/openads_demo_module/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_demo_module"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/releases/latest"><img src="https://img.shields.io/github/v/release/openads-project/openads_demo_service"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_demo_service"/></a>
   <br>
-  <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml/badge.svg"/></a>
-  <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml/badge.svg"/></a>
-  <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/helm-oci.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/helm-oci.yml/badge.svg"/></a>
-  <a href="https://openads-project.github.io/openads_demo_module"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docs.yml/badge.svg"/></a>
-  <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/docker-ros.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/compose-oci.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/compose-oci.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/helm-oci.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/helm-oci.yml/badge.svg"/></a>
+  <a href="https://openads-project.github.io/openads_demo_service"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/docs.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_demo_service/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_demo_service/actions/workflows/consistency.yml/badge.svg"/></a>
 </p>
 
 **Demo repository for an OpenADS module**
@@ -25,7 +25,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 >   - Settings → Actions → General → Workflow permissions → ○ Read and write permissions
 >   - Settings → Packages → Package creation → ☑ Public
 > 
-> [**GitHub Repository Settings**](https://github.com/openads-project/openads_demo_module/settings):
+> [**GitHub Repository Settings**](https://github.com/openads-project/openads_demo_service/settings):
 >   - About (Sidebar):
 >     - Description: `<short_title_description_from_readme>`
 >     - Website: `https://openads-project.github.io/`
@@ -56,11 +56,11 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Start a container of the pre-built runtime image.
     ```bash
-    docker run --rm -it ghcr.io/openads-project/openads_demo_module:latest bash
+    docker run --rm -it ghcr.io/openads-project/openads_demo_service:latest bash
     ```
 1. Inside the container, launch the pre-built nodes.
     ```bash
-    ros2 launch openads_demo_module openads_demo_module_launch.py
+    ros2 launch openads_demo_service openads_demo_service_launch.py
     ```
 
 ## 💻 Development
@@ -69,11 +69,11 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Clone the repository.
     ```bash
-    git clone https://github.com/openads-project/openads_demo_module.git
+    git clone https://github.com/openads-project/openads_demo_service.git
     ```
 1. Initialize the [`.openads-dev-environment`](https://github.com/openads-project/openads-dev-environment) submodule containing development environment configuration.
     ```bash
-    cd openads_demo_module
+    cd openads_demo_service
     git submodule update --init --recursive
     ```
 1. Open the repository in [Visual Studio Code](https://code.visualstudio.com).
@@ -106,12 +106,12 @@ colcon test-result --verbose
 
 ## 📝 Documentation
 
-Package and node interfaces are documented in the respective package READMEs listed below. Implementation details are found in the [Source Code Documentation](https://openads-project.github.io/openads_demo_module).
+Package and node interfaces are documented in the respective package READMEs listed below. Implementation details are found in the [Source Code Documentation](https://openads-project.github.io/openads_demo_service).
 
 | Package | Description |
 | --- | --- |
-| [openads_demo_module](openads_demo_module/README.md) | ROS 2 C++ package template for OpenADS |
-| [openads_demo_module_interfaces](openads_demo_module_interfaces/README.md) | ROS interface definitions for openads_demo_module |
+| [openads_demo_service](openads_demo_service/README.md) | ROS 2 C++ package template for OpenADS |
+| [openads_demo_service_interfaces](openads_demo_service_interfaces/README.md) | ROS interface definitions for openads_demo_service |
 
 ## ⚖️ Licensing
 

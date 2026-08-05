@@ -1,5 +1,5 @@
 apiVersion: v2
-name: openads-demo-module
+name: openads-demo-service
 version: 1.0.0
 appVersion: 1.0.0
 description: Demo repository for an OpenADS module

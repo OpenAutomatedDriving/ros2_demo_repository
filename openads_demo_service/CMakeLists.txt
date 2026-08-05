@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(openads_demo_module)
+project(openads_demo_service)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -11,12 +11,12 @@ find_package(perception_msgs REQUIRED)
 find_package(perception_msgs_utils REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
-find_package(openads_demo_module_interfaces REQUIRED)
+find_package(openads_demo_service_interfaces REQUIRED)
 find_package(std_srvs REQUIRED)
 
-set(TARGET_NAME openads_demo_module)
+set(TARGET_NAME openads_demo_service)
 
-add_executable(${TARGET_NAME} src/openads_demo_module.cpp)
+add_executable(${TARGET_NAME} src/openads_demo_service.cpp)
 
 target_include_directories(${TARGET_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -30,7 +30,7 @@ target_link_libraries(${TARGET_NAME} PUBLIC
   ${perception_msgs_TARGETS}
   ${perception_msgs_utils_TARGETS}
   ${rclcpp_action_TARGETS}
-  ${openads_demo_module_interfaces_TARGETS}
+  ${openads_demo_service_interfaces_TARGETS}
   ${std_srvs_TARGETS}
 )
 

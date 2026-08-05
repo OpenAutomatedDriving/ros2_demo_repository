@@ -1,10 +1,10 @@
 openadservice:
-  name: openads-demo-module
-  image: ghcr.io/openads-project/openads_demo_module:v1.0.0
+  name: openads-demo-service
+  image: ghcr.io/openads-project/openads_demo_service:v1.0.0
   env:
     # --- name ------
     NAMESPACE: /
-    NAME: openads_demo_module
+    NAME: openads_demo_service
     # --- inputs ----
     INPUT_TOPIC: ~/input
     # --- outputs ---
@@ -13,12 +13,12 @@ openadservice:
     SERVICE_TOPIC: ~/service
     LOG_LEVEL: info
     USE_SIM_TIME: false
-    PARAMS: /docker-ros/ws/install/openads_demo_module/share/openads_demo_module/config/params.yml
+    PARAMS: /docker-ros/ws/install/openads_demo_service/share/openads_demo_service/config/params.yml
   args:
   - /bin/bash
   - -ic
   - |
-    ros2 launch openads_demo_module openads_demo_module_launch.py \
+    ros2 launch openads_demo_service openads_demo_service_launch.py \
       namespace:=${NAMESPACE} \
       name:=${NAME} \
       log_level:=${LOG_LEVEL} \
@@ -27,5 +27,5 @@ openadservice:
       input_topic:=${INPUT_TOPIC} \
       output_topic:=${OUTPUT_TOPIC} \
       service_topic:=${SERVICE_TOPIC}
-  rosParamFileMountPath: /docker-ros/ws/install/openads_demo_module/share/openads_demo_module/config/params.yml
+  rosParamFileMountPath: /docker-ros/ws/install/openads_demo_service/share/openads_demo_service/config/params.yml
   rosParamFileData: null
