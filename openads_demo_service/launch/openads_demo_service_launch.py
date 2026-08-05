@@ -13,7 +13,7 @@ from launch_ros.actions import Node, SetParameter
 
 
 def generate_launch_description():
-    """Generate the launch description for the openads_demo_module node."""
+    """Generate the launch description for the openads_demo_service node."""
 
     remappable_topics = [
         DeclareLaunchArgument("input_topic", default_value="~/input"),
@@ -22,11 +22,11 @@ def generate_launch_description():
     ]
 
     args = [
-        DeclareLaunchArgument("name", default_value="openads_demo_module", description="node name"),
+        DeclareLaunchArgument("name", default_value="openads_demo_service", description="node name"),
         DeclareLaunchArgument("namespace", default_value="", description="node namespace"),
         DeclareLaunchArgument(
             "params",
-            default_value=os.path.join(get_package_share_directory("openads_demo_module"), "config", "params.yml"),
+            default_value=os.path.join(get_package_share_directory("openads_demo_service"), "config", "params.yml"),
             description="path to parameter file",
         ),
         DeclareLaunchArgument(
@@ -38,8 +38,8 @@ def generate_launch_description():
 
     nodes = [
         Node(
-            package="openads_demo_module",
-            executable="openads_demo_module",
+            package="openads_demo_service",
+            executable="openads_demo_service",
             namespace=LaunchConfiguration("namespace"),
             name=LaunchConfiguration("name"),
             parameters=[LaunchConfiguration("params")],

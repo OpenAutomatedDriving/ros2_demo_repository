@@ -21,7 +21,7 @@ jobs:
           target: dev,run
           base-image: rwthika/ros2:jazzy
           rmw-implementation: rmw_zenoh_cpp
-          command: ros2 launch openads_demo_module openads_demo_module_launch.py
+          command: ros2 launch openads_demo_service openads_demo_service_launch.py
           enable-industrial-ci: true
           label-maintainer: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
           label-authors: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>

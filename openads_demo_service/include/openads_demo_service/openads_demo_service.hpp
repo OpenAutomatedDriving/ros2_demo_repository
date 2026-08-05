@@ -15,9 +15,9 @@
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <std_srvs/srv/set_bool.hpp>
 
-#include <openads_demo_module_interfaces/action/fibonacci.hpp>
+#include <openads_demo_service_interfaces/action/fibonacci.hpp>
 
-namespace openads_demo_module {
+namespace openads_demo_service {
 
 template <typename C>
 struct is_vector : std::false_type {};
@@ -52,14 +52,14 @@ struct TopicDiagnosticConfig {
 };
 
 /**
- * @brief OpenadsDemoModule class
+ * @brief OpenadsDemoService class
  */
-class OpenadsDemoModule : public rclcpp::Node {
+class OpenadsDemoService : public rclcpp::Node {
  public:
   /**
-   * @brief Constructs the OpenadsDemoModule node
+   * @brief Constructs the OpenadsDemoService node
    */
-  OpenadsDemoModule();
+  OpenadsDemoService();
 
  private:
   /**
@@ -125,7 +125,7 @@ class OpenadsDemoModule : public rclcpp::Node {
    * @return goal response
    */
   rclcpp_action::GoalResponse actionHandleGoal(
-      const rclcpp_action::GoalUUID& uuid, std::shared_ptr<const openads_demo_module_interfaces::action::Fibonacci::Goal> goal);
+      const rclcpp_action::GoalUUID& uuid, std::shared_ptr<const openads_demo_service_interfaces::action::Fibonacci::Goal> goal);
 
   /**
    * @brief Processes action cancel requests
@@ -134,7 +134,7 @@ class OpenadsDemoModule : public rclcpp::Node {
    * @return cancel response
    */
   rclcpp_action::CancelResponse actionHandleCancel(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_service_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes accepted action goal requests
@@ -142,7 +142,7 @@ class OpenadsDemoModule : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionHandleAccepted(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_service_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Executes an action
@@ -150,7 +150,7 @@ class OpenadsDemoModule : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionExecute(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_service_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes timer triggers
@@ -197,7 +197,7 @@ class OpenadsDemoModule : public rclcpp::Node {
   /**
    * @brief Action server
    */
-  rclcpp_action::Server<openads_demo_module_interfaces::action::Fibonacci>::SharedPtr action_server_;
+  rclcpp_action::Server<openads_demo_service_interfaces::action::Fibonacci>::SharedPtr action_server_;
 
   /**
    * @brief Timer
@@ -244,4 +244,4 @@ class OpenadsDemoModule : public rclcpp::Node {
   TopicDiagnosticConfig diagnosed_publisher_config_;
 };
 
-}  // namespace openads_demo_module
+}  // namespace openads_demo_service
