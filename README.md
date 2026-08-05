@@ -36,7 +36,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 >     - Branch name pattern: `main`
 >     - ☑ Require a pull request before merging
 >     - ☑ Require status checks to pass before merging (only possible to set once public)
->       - Status checks that are required: `docker-ros`, `compose-oci`, `consistency`
+>       - Status checks that are required: `docker-ros`, `compose-helm`, `compose-oci`, `consistency`
 >     - ☑ Require conversation resolution before merging (only possible to set once public)
 >   - Settings → Pages → Branch: `gh-pages` (only possible to set once public)
 >   - If the repository was created in a private namespace and the organization settings above cannot be applied:
