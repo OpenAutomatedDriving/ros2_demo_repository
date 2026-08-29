@@ -1,5 +1,5 @@
 include:
-  - remote: https://raw.githubusercontent.com/ika-rwth-aachen/docker-ros/v1.10.0/.gitlab-ci/docker-ros.yml
+  - remote: https://raw.githubusercontent.com/ika-rwth-aachen/docker-ros/refs/heads/copilot/pass-run-and-dev-image-name/.gitlab-ci/docker-ros.yml
 
 variables:
   PLATFORM: amd64
