@@ -10,3 +10,31 @@ variables:
   ENABLE_INDUSTRIAL_CI: true
   LABEL_MAINTAINER: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
   LABEL_AUTHORS: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
+
+test-run-image:
+  stage: Push Multi-Arch Images
+  needs:
+    - job: Push CI
+      optional: true
+    - job: Push
+      optional: true
+    - job: Push target tag
+      optional: true
+    - job: Push tag
+      optional: true
+  script:
+    - docker run --rm "${RUN_IMAGE}" ros2 node list
+
+test-dev-image:
+  stage: Push Multi-Arch Images
+  needs:
+    - job: Push CI
+      optional: true
+    - job: Push
+      optional: true
+    - job: Push target tag
+      optional: true
+    - job: Push tag
+      optional: true
+  script:
+    - docker run --rm "${DEV_IMAGE}" ls /docker-ros/ws/src/target
