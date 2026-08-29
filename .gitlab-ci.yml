@@ -10,6 +10,7 @@ variables:
   ENABLE_INDUSTRIAL_CI: true
   LABEL_MAINTAINER: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
   LABEL_AUTHORS: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
+  TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 
 test-run-image:
   stage: Push Multi-Arch Images
