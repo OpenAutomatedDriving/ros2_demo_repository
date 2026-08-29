@@ -39,3 +39,17 @@ test-dev-image:
       optional: true
   script:
     - docker run --rm "${DEV_IMAGE}" ls /docker-ros/ws/src/target
+
+test-slim-image:
+  stage: Push Multi-Arch Images
+  needs:
+    - job: Push CI
+      optional: true
+    - job: Push
+      optional: true
+    - job: Push target tag
+      optional: true
+    - job: Push tag
+      optional: true
+  script:
+    - docker run --rm "${SLIM_IMAGE}"
