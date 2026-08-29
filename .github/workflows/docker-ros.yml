@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - test-ci
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
   pull_request:
@@ -15,7 +16,8 @@ jobs:
   docker-ros:
     runs-on: ubuntu-latest
     steps:
-      - uses: ika-rwth-aachen/docker-ros@main
+      - uses: ika-rwth-aachen/docker-ros@copilot/pass-run-and-dev-image-name
+        id: docker-ros
         with:
           platform: amd64
           target: dev,run
@@ -27,3 +29,5 @@ jobs:
           label-authors: Institute for Automotive Engineering (ika), RWTH Aachen University <opensource@ika.rwth-aachen.de>
         env:
           TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+      - run: docker run --rm "${{ steps.docker-ros.outputs.run-image }}" ros2 node list
+      - run: docker run --rm "${{ steps.docker-ros.outputs.dev-image }}" ls /docker-ros/ws/src/target
