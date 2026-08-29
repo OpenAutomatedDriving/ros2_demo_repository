@@ -31,3 +31,4 @@ jobs:
           TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
       - run: docker run --rm "${{ steps.docker-ros.outputs.run-image }}" ros2 node list
       - run: docker run --rm "${{ steps.docker-ros.outputs.dev-image }}" ls /docker-ros/ws/src/target
+      - run: docker run --rm "${{ steps.docker-ros.outputs.slim-image }}"
